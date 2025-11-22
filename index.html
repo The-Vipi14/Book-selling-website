@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/popularBooks.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
 </head>
 
 <body>
@@ -26,9 +27,14 @@
         <div class="nav-buttons">
             <img src="./assets/icons/search.png" alt="">
             <img src="./assets/icons/cart.png" alt="">
-            <button><img src="./assets/icons/user.png" alt=""> login</button>
+            <button onclick="showLoginPage()"><img src="./assets/icons/user.png" alt=""> login</button>
         </div>
     </nav>
+    <div id="login-page">
+        <div class="login-popup">
+            <button onclick="loginPageCut()" id="cut-btn" style="height: 50px; width: 50px;">X</button>
+        </div>
+    </div>
     <div class="body-proxy">
 
         <div class="unleash-books-box">

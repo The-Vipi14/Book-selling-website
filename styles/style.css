@@ -8,19 +8,19 @@
 :root {
   --btn-border: 2px solid rgba(255, 166, 0, 0.897);
   --btn-green-bgColor: rgb(53, 196, 1);
-  --btn-orange-bgColor:#ff671ae8 ;
+  --btn-orange-bgColor: #ff671ae8;
 }
-html{
+html {
   width: 100%;
   background-color: red;
 }
 
 body {
-  background: linear-gradient( #fff200, #ff9e62);
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; 
+  background: linear-gradient(#fff200, #ff9e62);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   user-select: none;
   width: 100%;
-  overflow-x: ;
+  overflow-x: hidden;
 }
 
 button {
@@ -29,12 +29,15 @@ button {
 
 .body-proxy {
   background-color: rgba(255, 255, 255, 0.94);
-  padding: 0 3%; 
+  padding: 0 3%;
   width: 100%;
 }
 
 nav {
+  position: sticky;
+  top: 0;
   height: 10vh;
+  z-index: 999;
   /* width: 100vw; */
   background-color: white;
   display: flex;
@@ -102,6 +105,35 @@ nav {
   align-items: center;
 }
 
+/* ================================ login box ============================== */
+.blur-body {
+  filter: blur(2px);
+  pointer-events: none; /* prevents clicking the background */
+  user-select: none;
+}
+.no-scroll {
+  overflow: hidden;
+}
+
+#login-page {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.421);
+  z-index: 1;
+  display: none;
+  padding: 2%;
+}
+.login-popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 70vmin;
+  width: 50%;
+  background-color: red;
+}
+
 .unleash-books-box {
   display: flex;
   width: 100%;
@@ -152,41 +184,38 @@ nav {
   align-items: center;
 }
 .front-books img {
-  width: 300px;
+  width: 600px;
   filter: drop-shadow(-8px 25px 10px rgb(156, 156, 156));
 }
 .browes-by-bk-typ {
   display: flex;
   align-items: center;
   width: 100%;
-  height:50px;
+  height: 50px;
   padding: 0 20px;
   justify-content: space-between;
 }
-.browes-by-bk-typ h1{
+.browes-by-bk-typ h1 {
   font-size: 50px;
 }
-.arrow-btn-box{
-  width: 150px ;
+.arrow-btn-box {
+  width: 150px;
   display: flex;
   height: 100%;
   justify-content: space-around;
 }
 
-
 /* <======================== right arrows =============================> */
 
-
-.right-arrows  {
+.right-arrows {
   width: 50%;
   height: 100%;
-  
 }
-.left-arrows  {
+.left-arrows {
   width: 250px;
-  height: 100%; 
+  height: 100%;
 }
- #right-arrow-btn {
+#right-arrow-btn {
   position: relative;
   height: 100%;
   width: 50%;
@@ -195,24 +224,24 @@ nav {
   outline: none;
 }
 
-.under{
- position: absolute;
- top: 0px;
- left: 20%;
- height: 50px;
- border-radius: 50%;
- padding: 10px;
+.under {
+  position: absolute;
+  top: 0px;
+  left: 20%;
+  height: 50px;
+  border-radius: 50%;
+  padding: 10px;
 }
 
-.over{
- position: absolute;
- top: 0px;
- left: 20%;
- height: 50px;
- border-radius: 50%;
- padding: 10px;
- border: 1px solid rgb(172, 169, 169);
- transition: 0.9s;
+.over {
+  position: absolute;
+  top: 0px;
+  left: 20%;
+  height: 50px;
+  border-radius: 50%;
+  padding: 10px;
+  border: 1px solid rgb(172, 169, 169);
+  transition: 0.9s;
 }
 
 .right-arrows #right-arrow-btn:hover .over {
@@ -222,21 +251,19 @@ nav {
 .right-arrows #right-arrow-btn:hover .under {
   display: block;
   background-color: #ff7d2c;
-  transition: .9s;
+  transition: 0.9s;
 }
 .right-arrows #right-arrow-btn:hover .right-arrows button {
- background-color: #ff7d2c;
+  background-color: #ff7d2c;
 }
-
 
 /* <======================== left arrows =========================> */
 
-
-.left-arrows  {
+.left-arrows {
   width: 50%;
-  height: 100%; 
+  height: 100%;
 }
- #left-arrow-btn {
+#left-arrow-btn {
   position: relative;
   height: 100%;
   width: 50%;
@@ -252,16 +279,14 @@ nav {
 .left-arrows #left-arrow-btn:hover .under {
   display: block;
   background-color: #ff7d2c;
-  transition: .9s;
+  transition: 0.9s;
 }
 .left-arrows #left-arrow-btn:hover .left-arrows button {
- background-color: #ff7d2c;
+  background-color: #ff7d2c;
 }
 
-
-
 /* === books-categories ===== */
-.books-categories{
+.books-categories {
   width: 100%;
   height: 10vh;
   margin-top: 60px;
@@ -269,7 +294,7 @@ nav {
   justify-content: space-evenly;
   align-items: center;
 }
-.func-card{
+.func-card {
   width: 14%;
   height: 90%;
   background-color: #fff;
@@ -279,15 +304,14 @@ nav {
   align-items: center;
   border-radius: 7px;
 }
-.func-card img{
+.func-card img {
   width: 28%;
   background-color: #fff;
 }
 
-
 /* <======== offers-poster-box =======> */
 
-.offers-poster-box{
+.offers-poster-box {
   margin-top: 25vh;
   width: 90%;
   margin-left: 5%;
@@ -297,39 +321,36 @@ nav {
   align-items: center;
   justify-content: space-around;
 }
-.offers-poster-box button{
- height: 50px;
- width: 150px;
- border-radius: 10px;
- font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
- font-weight: 500;
- font-size: 16px;
+.offers-poster-box button {
+  height: 50px;
+  width: 150px;
+  border-radius: 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
 }
-#poster-img-1{
- width: 25%;
+#poster-img-1 {
+  width: 25%;
 }
-#poster-img-2{
- width: 30%;
+#poster-img-2 {
+  width: 30%;
 }
-.offer-content{
+.offer-content {
   height: 100%;
   width: 45%;
   padding-left: 60px;
   padding-top: 50px;
 }
-.offer-content h1{
-font-size: 3rem;
-margin-bottom: 30px;
+.offer-content h1 {
+  font-size: 3rem;
+  margin-bottom: 30px;
 }
-.offer-purchase-btn{
+.offer-purchase-btn {
   background-color: var(--btn-orange-bgColor);
   border: none;
   color: #d5d2d2;
 }
 
-.offer-coupon{
+.offer-coupon {
   border: 1px solid rgb(103, 103, 103);
 }
-
-
-

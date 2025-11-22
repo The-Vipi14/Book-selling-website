@@ -26,41 +26,41 @@
   font-size: 20px;
   color: rgb(60, 60, 60);
 }
-.popular-books-container{
-    margin-top: 30px;
-    height:100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit , minmax(300px , 200px));
-    gap: 20px;
-    place-content: center;
+
+.popular-books-container {
+  margin-top: 30px;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 200px));
+  gap: 20px;
+  place-content: center;
 }
-.book-card{
-    height: 400px;
-    width:280px;
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5px;
-    padding: 20px 0;
-    border-radius: 20px;
+.book-card {
+  height: 400px;
+  width: 280px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  padding: 20px 0;
+  border-radius: 20px;
 }
 .book-card:hover {
-   
 }
-.book-card img{
-    width: 50%;
+.book-card img {
+  width: 50%;
 }
-.book-card button{
-    height: 40px;
-    width: 120px;
-   background-color: transparent;
-    border-radius: 10px;
-    border: 1px solid var(--btn-green-bgColor);
-    color: var(--btn-green-bgColor);
-    font-size: 17px;
+.book-card button {
+  height: 40px;
+  width: 120px;
+  background-color: transparent;
+  border-radius: 10px;
+  border: 1px solid var(--btn-green-bgColor);
+  color: var(--btn-green-bgColor);
+  font-size: 17px;
 }
-.book-card button:hover{
-    background-color:var(--btn-green-bgColor);
-    color: rgb(255, 255, 255);
+.book-card button:hover {
+  background-color: var(--btn-green-bgColor);
+  color: rgb(255, 255, 255);
 }
