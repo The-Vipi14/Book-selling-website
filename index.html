@@ -18,26 +18,35 @@
             <h1>Books</h1>
         </div>
         <div class="nav-items">
-            <a href="">Home</a>
-            <a href="">Categories</a>
-            <a href="">nav items</a>
-            <a href="">nav items</a>
-            <a href="">nav items</a>
+            <a href="#unleash-books-box">Home</a>
+            <a href="#browes-by-bk-typ">Categories</a>
+            <a href="">Popular</a>
+            <a href="">About</a>
+            <a href="">Contact us</a>
         </div>
         <div class="nav-buttons">
-            <img src="./assets/icons/search.png" alt="">
-            <img src="./assets/icons/cart.png" alt="">
+            <img src="./assets/icons/search.png" id="search-btn" alt="">
+            <img src="./assets/icons/cart.png" id="cart-btn" alt="">
             <button onclick="showLoginPage()"><img src="./assets/icons/user.png" alt=""> login</button>
         </div>
     </nav>
+
+    <div class="responsive-navbar ">
+        <a href="#unleash-books-box">Home</a>
+        <a href="#browes-by-bk-typ">Categories</a>
+        <a href="">Popular</a>
+        <a href="">About</a>
+        <a href="">Contact us</a>
+        <a href="">cart</a>
+    </div>
+
     <div id="login-page">
         <div class="login-popup">
             <button onclick="loginPageCut()" id="cut-btn" style="height: 50px; width: 50px;">X</button>
         </div>
     </div>
     <div class="body-proxy">
-
-        <div class="unleash-books-box">
+        <div id="unleash-books-box">
             <div class="unleash-text">
                 <h1>Unleash Your <span>Creativity</span> <br> With The Power Of Book.</h1>
                 <p>This should be used to tell a story and let your users know a <br> little more about your product or
@@ -52,7 +61,7 @@
             </div>
         </div>
 
-        <div class="browes-by-bk-typ">
+        <div id="browes-by-bk-typ">
             <h1>Browes By Book Types</h1>
             <div class="arrow-btn-box">
 
@@ -131,16 +140,53 @@
                     <p>Non Fiction</p>
                 </div>
             </div>
-            <div class="popular-books-container">
-                <!-- <div class="book-card">
+
+            <div class="container">
+
+                <div class="popular-books-container">
+                    <!-- <div class="book-card">
                     <img src="./assets/Books/book1.jpg" alt="">
                     <h3>Book name</h3>
                     <h4 class="book-card">ISBN:129484673783</h4>
                     <p><span style="text-decoration: line-through; color: red;">$3.36</span><span style="color: green;">$3.36</span></p>
                     <button id="btn">purchase</button>
                 </div> -->
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <!--#####============== why choose us ====================#### -->
+
+        <div class="why-choise-text-box">
+            <div class="choice-topic">
+                <h1>Why Choice <br> <span style="color: chocolate;">eDox</span> Bookshop</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, eaque eligendi aliquid quam suscipit
+                repellat. Saepe nam, incidunt consectetur fuga maxime aliquam ad voluptatibus quidem itaque dolorem?
+                Iste quia non eius, cumque exercitationem ab sit, officia repellendus nihil amet dignissimos
+                perspiciatis.
+            </p>
+            </div>
+            <div class="expnd-mind-box">
+                <div class="degree-img-box">
+                    <img src="./assets/degree-and-cap.png" alt="">
+                </div>
+                <div class="expnd-text-box">
+                    <h1>Expand your mind, <br><span style="color: green;">Reading </span>a book</h1>
+                    <p>starting off in an eighteenth century Landon, this book <br>invites readers in an exciting
+                        journey.</p>
+                    <div class="expnd-btn-box">
+                        <a href="">Productivity</a>
+                        <a href="">Solution</a>
+                        <a href="">Option</a>
+                    </div>
+                </div>
             </div>
         </div>
+
     </div>
 
     <script src="./scripts/script.js"></script>

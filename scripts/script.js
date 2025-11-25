@@ -24,6 +24,81 @@ const Books = [
         price: 304,
         image: "./assets/Books/book1.jpg"
     },
+    {
+        name: "friction",
+        price: 304,
+        image: "./assets/Books/book1.jpg"
+    },
+    {
+        name: "friction",
+        price: 304,
+        image: "./assets/Books/book1.jpg"
+    },
+    {
+        name: "friction",
+        price: 304,
+        image: "./assets/Books/book1.jpg"
+    },
+    {
+        name: "friction",
+        price: 304,
+        image: "./assets/Books/book1.jpg"
+    },
+    {
+        name: "friction",
+        price: 304,
+        image: "./assets/Books/book1.jpg"
+    },
+    {
+        name: "friction",
+        price: 304,
+        image: "./assets/Books/book1.jpg"
+    },
+    {
+        name: "friction",
+        price: 304,
+        image: "./assets/Books/book1.jpg"
+    },
+    {
+        name: "friction",
+        price: 304,
+        image: "./assets/Books/book1.jpg"
+    },
+    {
+        name: "friction",
+        price: 304,
+        image: "./assets/Books/book1.jpg"
+    },
+    {
+        name: "friction",
+        price: 304,
+        image: "./assets/Books/book1.jpg"
+    },
+    {
+        name: "friction",
+        price: 304,
+        image: "./assets/Books/book1.jpg"
+    },
+    {
+        name: "friction",
+        price: 304,
+        image: "./assets/Books/book1.jpg"
+    },
+    {
+        name: "friction",
+        price: 304,
+        image: "./assets/Books/book1.jpg"
+    },
+    {
+        name: "friction",
+        price: 304,
+        image: "./assets/Books/book1.jpg"
+    },
+    {
+        name: "friction",
+        price: 304,
+        image: "./assets/Books/book1.jpg"
+    },
 ];
 
 const popBooks = document.querySelector('.popular-books-container');

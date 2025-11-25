@@ -7,6 +7,35 @@
     overflow-x: hidden;
   }
 
+  /* ================== responsive navbar ===========  */
+  .responsive-navbar a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: rgb(66, 66, 66);
+  }
+  .responsive-navbar {
+    display: block;
+    position: absolute;
+    /* top: -40%; */
+    top: 0%;
+    height: 50%;
+    width: 30%;
+    background-color: rgb(198, 193, 193);
+    right: 0;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+  }
+
+
+#cart-btn{
+  display: none;
+}
+
+/* nav bar */
+  
   nav {
     padding: 0 5%;
     height: 7vh;
@@ -40,7 +69,8 @@
     width: 5%;
   }
 
-  .unleash-books-box {
+  #unleash-books-box {
+    display: flex;
     flex-direction: column;
     height: auto;
     padding: 10vh 5% 5vh;
@@ -75,11 +105,11 @@
   }
 
   .front-books img {
-    width: 100%;
+    width: 80%;
     margin-left: 100px;
   }
 
-  .browes-by-bk-typ {
+  #browes-by-bk-typ {
     /* flex-direction: column; */
     height: auto;
     padding: 20px 2%;
@@ -88,7 +118,7 @@
     /* background-color: red; */
   }
 
-  .browes-by-bk-typ h1 {
+  #browes-by-bk-typ h1 {
     font-size: 1.5rem;
   }
 
@@ -124,10 +154,9 @@
     gap: 15px;
     padding: 0px 2% 5px 2%;
     overflow-x: scroll;
-    scrollbar-width:none;
+    scrollbar-width: none;
     margin: 0;
   }
- 
 
   .func-card {
     width: 35%;

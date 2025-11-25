@@ -26,14 +26,19 @@
   font-size: 20px;
   color: rgb(60, 60, 60);
 }
-
 .popular-books-container {
+  max-height: 500px; /* Fixed height */
+  overflow-y: auto; /* Enables vertical scrolling */
+  padding-right: 10px; /* Prevent scrollbar overlap */
   margin-top: 30px;
-  height: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 200px));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
-  place-content: center;
+  border-radius: 10px; /* Optional */
+  padding: 20px;
+}
+.popular-books-container::-webkit-scrollbar {
+  display: none;
 }
 .book-card {
   height: 400px;
@@ -63,4 +68,91 @@
 .book-card button:hover {
   background-color: var(--btn-green-bgColor);
   color: rgb(255, 255, 255);
+}
+
+
+
+
+/* <===============+ why-choise-text-box +==========================> */
+
+.why-choise-text-box{
+  margin-top: 10vh;
+  height: 90vh;
+  background-color: #fca8a82d;
+  padding: 6%;
+}
+
+.choice-topic{
+  height: 45%;
+  width: 88%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.choice-topic h1{
+  width: 50%;
+  font-size: 3.5rem;
+}
+.choice-topic p {
+  width: 50%;
+  font-size: 1.1rem;
+  color: rgb(42, 40, 40);
+}
+.expnd-mind-box{
+  height:65%;
+  width: 88%;
+  background-color: rgb(255, 255, 255);
+  margin: auto;
+  border-radius: 20px;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.degree-img-box{
+  height: 200px;
+  width: 200px;
+  background-color: rgb(251, 115, 41);
+  margin: auto;
+  border-radius: 50%;
+  position: relative ;
+}
+.degree-img-box img{
+ position: absolute;
+ width: 220px;
+ top: -40px;
+ left: 50px;
+}
+.expnd-text-box{
+  height: 90%;
+  width: 60%;
+  margin: auto;
+  padding-left: 100px;
+}
+.expnd-text-box h1{
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+}
+.expnd-text-box p{
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+.expnd-btn-box {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+.expnd-btn-box a{
+  font-size: 1.2rem;
+  text-decoration: none;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.expnd-btn-box a:nth-child(1){
+  color: rgb(3, 127, 158);
+}
+.expnd-btn-box a:nth-child(2){
+  color: green;
+}
+.expnd-btn-box a:nth-child(3){
+  color: rgb(244, 68, 25);
 }
