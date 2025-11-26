@@ -27,22 +27,23 @@
   color: rgb(60, 60, 60);
 }
 .popular-books-container {
-  max-height: 500px; /* Fixed height */
-  overflow-y: auto; /* Enables vertical scrolling */
-  padding-right: 10px; /* Prevent scrollbar overlap */
+  max-height: 500px;
+  max-width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto; 
   margin-top: 30px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  border-radius: 10px; /* Optional */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   padding: 20px;
+  gap: 50px;
+  justify-content: center;
+  /* background: #000; */
 }
 .popular-books-container::-webkit-scrollbar {
   display: none;
 }
 .book-card {
   height: 400px;
-  width: 280px;
   background-color: rgb(255, 255, 255);
   display: flex;
   flex-direction: column;
@@ -50,11 +51,28 @@
   gap: 5px;
   padding: 20px 0;
   border-radius: 20px;
+  transition: 0.5s ease;
+}
+.book-card h3,h4 {
+ text-align: center;
+}
+.book-card:hover {
+ transform: translateY(-10px);
+ background-color: #ebe9e8;
+
 }
 .book-card:hover {
 }
-.book-card img {
-  width: 50%;
+.book-img-box{
+  height: 60%;
+  background-color: red;
+  width: 60%;
+}
+.book-img-box img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: bottom;
 }
 .book-card button {
   height: 40px;
@@ -70,26 +88,23 @@
   color: rgb(255, 255, 255);
 }
 
-
-
-
 /* <===============+ why-choise-text-box +==========================> */
 
-.why-choise-text-box{
-  margin-top: 10vh;
+.why-choise-text-box {
+  /* margin-top: 10vh; */
   height: 90vh;
-  background-color: #fca8a82d;
-  padding: 6%;
+  background-color: #ffe7e0;
+  padding: 6% 6% 10% 6%;
 }
 
-.choice-topic{
+.choice-topic {
   height: 45%;
   width: 88%;
   margin: auto;
   display: flex;
   justify-content: space-between;
 }
-.choice-topic h1{
+.choice-topic h1 {
   width: 50%;
   font-size: 3.5rem;
 }
@@ -98,42 +113,44 @@
   font-size: 1.1rem;
   color: rgb(42, 40, 40);
 }
-.expnd-mind-box{
-  height:65%;
+.expnd-mind-box {
+  height: 85%;
   width: 88%;
   background-color: rgb(255, 255, 255);
   margin: auto;
-  border-radius: 20px;
+  border-radius: 50px;
   padding: 30px;
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
-.degree-img-box{
+.degree-img-box {
   height: 200px;
   width: 200px;
   background-color: rgb(251, 115, 41);
   margin: auto;
   border-radius: 50%;
-  position: relative ;
+  position: relative;
 }
-.degree-img-box img{
- position: absolute;
- width: 220px;
- top: -40px;
- left: 50px;
+.degree-img-box img {
+  position: absolute;
+  width: 220px;
+  top: -40px;
+  left: 50px;
 }
-.expnd-text-box{
-  height: 90%;
+.expnd-text-box {
+  height: 100%;
   width: 60%;
   margin: auto;
   padding-left: 100px;
+  align-content: center;
 }
-.expnd-text-box h1{
+.expnd-text-box h1 {
   font-size: 2.8rem;
   margin-bottom: 15px;
 }
-.expnd-text-box p{
+.expnd-text-box p {
   font-size: 1.1rem;
   margin-bottom: 15px;
 }
@@ -142,17 +159,89 @@
   display: flex;
   justify-content: space-between;
 }
-.expnd-btn-box a{
+.expnd-btn-box a {
   font-size: 1.2rem;
   text-decoration: none;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-.expnd-btn-box a:nth-child(1){
+.expnd-btn-box a:nth-child(1) {
   color: rgb(3, 127, 158);
 }
-.expnd-btn-box a:nth-child(2){
+.expnd-btn-box a:nth-child(2) {
   color: green;
 }
-.expnd-btn-box a:nth-child(3){
+.expnd-btn-box a:nth-child(3) {
   color: rgb(244, 68, 25);
+}
+
+.meet-our-aouthor {
+  height: 90vh;
+  width: 100%;
+  background: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 5%;
+}
+
+.aouthor-container {
+  display: flex;
+  width: 80%;
+  height: 60%;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+.aouthor-container button {
+  height: 50px;
+  width: 90px;
+}
+.aouthor-cards-box {
+  height: 95%;
+  width: 65%;
+  display: flex;
+  justify-content: space-between;
+  overflow-x: scroll;
+  gap: 2%;
+}
+.aouthor-cards-box::-webkit-scrollbar {
+  display: none;
+}
+.aouthor-card {
+  height: 100%;
+  width: 32%;
+  border: 1px solid black;
+  flex-shrink: 0;
+  border-radius: 15px;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: inset 20px -73px 90px rgb(0, 0, 0);
+  color: white;
+  align-content: flex-end;
+  padding: 20px;
+}
+
+/* ###  ========================= sales % ================================== ### */
+
+.sale-perc-poster {
+  height: 50%;
+  width: 100%;
+  background-color: rgba(255, 81, 0, 0.945);
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+  padding: 4% 10%;
+  color: aliceblue;
+}
+
+.sale-perc-poster h1 {
+  font-size: 5rem;
+}
+.sale-perc-poster h2 {
+  height: 80%;
+  width: 60%;
+  font-size: 2.2rem;
+  text-align: center;
 }

@@ -40,10 +40,69 @@
         <a href="">cart</a>
     </div>
 
+
+
+
+
     <div id="login-page">
-        <div class="login-popup">
+        <!-- <div class="login-popup">
             <button onclick="loginPageCut()" id="cut-btn" style="height: 50px; width: 50px;">X</button>
+
+        </div> -->
+        <div class="login-popup">
+
+            <button onclick="loginPageCut()" id="cut-btn" style="height: 50px; width: 50px;">X</button>
+
+            <h2 class="login-title">Login</h2>
+
+            <form class="login-form">
+
+                <div class="input-box">
+                    <label>Email</label>
+                    <input type="email" placeholder="Enter your email">
+                </div>
+
+                <div class="input-box">
+                    <label>Password</label>
+                    <input type="password" placeholder="Enter your password">
+                </div>
+
+                <button class="login-btn">Login</button>
+
+                <p class="signup-text">
+                    Don't have an account? <a href="#">Sign Up</a>
+                </p>
+
+            </form>
+            <h2 class="signup-title" style="display:none;">Sign Up</h2>
+
+            <form class="signup-form" style="display:none;">
+                <div class="input-box">
+                    <label>Full Name</label>
+                    <input type="text" placeholder="Enter your full name">
+                </div>
+
+                <div class="input-box">
+                    <label>Email</label>
+                    <input type="email" placeholder="Enter your email">
+                </div>
+
+                <div class="input-box">
+                    <label>Password</label>
+                    <input type="password" placeholder="Create password">
+                </div>
+
+                <button class="signup-btn">Create Account</button>
+
+                <p class="switch-text">
+                    Already have an account?
+                    <span id="show-login">Login</span>
+                </p>
+            </form>
+
+
         </div>
+
     </div>
     <div class="body-proxy">
         <div id="unleash-books-box">
@@ -156,40 +215,80 @@
 
         </div>
 
-
-
         <!--#####============== why choose us ====================#### -->
-
-        <div class="why-choise-text-box">
-            <div class="choice-topic">
-                <h1>Why Choice <br> <span style="color: chocolate;">eDox</span> Bookshop</h1>
+    </div>
+    <div class="why-choise-text-box">
+        <div class="choice-topic">
+            <h1>Why Choice <br> <span style="color: chocolate;">eDox</span> Bookshop</h1>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, eaque eligendi aliquid quam suscipit
                 repellat. Saepe nam, incidunt consectetur fuga maxime aliquam ad voluptatibus quidem itaque dolorem?
                 Iste quia non eius, cumque exercitationem ab sit, officia repellendus nihil amet dignissimos
                 perspiciatis.
             </p>
+        </div>
+        <div class="expnd-mind-box">
+            <div class="degree-img-box">
+                <img src="./assets/degree-and-cap.png" alt="">
             </div>
-            <div class="expnd-mind-box">
-                <div class="degree-img-box">
-                    <img src="./assets/degree-and-cap.png" alt="">
-                </div>
-                <div class="expnd-text-box">
-                    <h1>Expand your mind, <br><span style="color: green;">Reading </span>a book</h1>
-                    <p>starting off in an eighteenth century Landon, this book <br>invites readers in an exciting
-                        journey.</p>
-                    <div class="expnd-btn-box">
-                        <a href="">Productivity</a>
-                        <a href="">Solution</a>
-                        <a href="">Option</a>
-                    </div>
+            <div class="expnd-text-box">
+                <h1>Expand your mind, <br><span style="color: green;">Reading </span>a book</h1>
+                <p>starting off in an eighteenth century Landon, this book <br>invites readers in an exciting
+                    journey.</p>
+                <div class="expnd-btn-box">
+                    <a href="">Productivity</a>
+                    <a href="">Solution</a>
+                    <a href="">Option</a>
                 </div>
             </div>
         </div>
+    </div>
+    <!-- ###=========================== Meet out Aouthor =====================### -->
 
+
+
+    <div class="meet-our-aouthor">
+        <h1> Meet out Aouthor </h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Natus architecto dolorem rerum deleniti facere
+            <br>
+            necessitatibus dolor fugiat eius sint recusandae.
+        </p>
+        <div class="aouthor-container">
+            <button>left</button>
+            <div class="aouthor-cards-box">
+                <!-- <div class="aouthor-card">
+                    <h3>aouthor name</h3>
+                    <p>published books</p>
+                    <div class="aouthor-contact">
+                    </div>
+                </div> -->
+            </div>
+            <button>right</button>
+        </div>
     </div>
 
-    <script src="./scripts/script.js"></script>
+    <!-- ###=================== sale % ============================### -->
+
+    <div class="sale-perc-poster">
+        <h1>50% Sale!</h1>
+        <h2>Purchase your selected items up to 50% <br>Discount in every week</h2>
+    </div>
+
+
+    <!-- ###==================== Footer ===========================### -->
+
+    <div class="footer">
+        <div class="footer-left-sec">
+            <img src="" alt="">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto voluptate adipisci ad omnis non
+                doloribus, cupiditate ipsum fugit? Nisi omnis laudantium vel neque itaque sint in, cum corrupti hic
+                iste. Consequatur quia earum nesciunt doloremque ipsum sunt adipisci dolores. Quasi.</p>
+        </div>
+        <div class="footer-right-sec"></div>
+    </div>
+
+    <script type="module" src="./scripts/script.js"></script>
+    <script src="./scripts/loginSign.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,55 @@
+ <script src="./scripts/loginSign.js"></script>
+
+loginSign.js
+            
+    code:
+    -------------
+const loginPageCut_btn = document.getElementById('cut-btn');
+
+const loginPageCut = () => {
+        document.getElementById('login-page').style.display = "none";
+        document.querySelector('.body-proxy').classList.remove('blur-body');
+        document.querySelector('body').classList.remove('no-scroll')
+    }
+const showLoginPage = () => {
+    document.getElementById('login-page').style.display = "block";
+    document.querySelector('.body-proxy').classList.add('blur-body');
+    document.querySelector('body').classList.add('no-scroll');
+}
+
+
+
+
+but if you are using type="module"
+ <script type="module" src="./scripts/loginSign.js"></script> 
+
+
+ your code will be:
+
+ const loginPageCut_btn = document.getElementById('cut-btn');
+
+window.loginPageCut = () => {
+    document.getElementById('login-page').style.display = "none";
+    document.querySelector('.body-proxy').classList.remove('blur-body');
+    document.querySelector('body').classList.remove('no-scroll');
+}
+
+window.showLoginPage = () => {
+    document.getElementById('login-page').style.display = "block";
+    document.querySelector('.body-proxy').classList.add('blur-body');
+    document.querySelector('body').classList.add('no-scroll');
+}
+
+
+
+🔯🔯🔯🔯🔯🔯🔯🔯🔯🙋‍♂️🙋‍♂️🙋‍♂️🙋‍♂️🙋‍♂️🙋‍♂️🙋‍♂️🙋‍♂️🙋‍♂️📝📝📝📝📝📝📝📝📝📝🔯🔯✅✅✅✅✅✅
+
+
+⚠️ Why this works
+
+Because now the function becomes global, and inline onclick="" handlers can access it.
+
+Modules DO NOT expose functions globally unless you manually attach them to window.
+
+
+🔯🔯🔯🔯🔯🔯🔯🔯🔯🙋‍♂️🙋‍♂️🙋‍♂️🙋‍♂️🙋‍♂️🙋‍♂️🙋‍♂️🙋‍♂️🙋‍♂️📝📝📝📝📝📝📝📝📝📝🔯🔯✅✅✅✅✅✅
