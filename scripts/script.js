@@ -16,7 +16,7 @@ function createBookCards() {
                     <h4>${book.author}</h4>
                     <p><span style="text-decoration: line-through; color: red;">$3.36</span><span style="color: green;">$3.36</span></p>
                     <button >purchase</button>`
-        popBooks.appendChild(bookCard)
+        popBooks.appendChild(bookCard);
     });
     console.log("first")
 }

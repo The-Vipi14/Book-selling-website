@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/popularBooks.css">
     <link rel="stylesheet" href="./styles/responsive.css">
@@ -15,122 +15,121 @@
    LOGIN + SIGNUP POPUP UI
 -------------------------- */
 
-/* Close button */
-#cut-btn {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  height: 40px !important;
-  width: 40px !important;
-  border: none;
-  background: #ff7b00;
-  color: white;
-  font-size: 20px;
-  font-weight: bold;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: 0.3s;
-}
+    /* Close button */
+    #cut-btn {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        height: 40px !important;
+        width: 40px !important;
+        border: none;
+        background: #ff7b00;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: 0.3s;
+    }
 
-#cut-btn:hover {
-  background: #ff5400;
-}
+    #cut-btn:hover {
+        background: #ff5400;
+    }
 
 
-/* Titles */
-.login-title,
-.signup-title {
-  text-align: center;
-  font-size: 28px;
-  font-weight: 800;
-  color: #ff7b00;
-  margin-top: 30px;
-  margin-bottom: 20px;
-  letter-spacing: 1px;
-}
+    /* Titles */
+    .login-title,
+    .signup-title {
+        text-align: center;
+        font-size: 28px;
+        font-weight: 800;
+        color: #ff7b00;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        letter-spacing: 1px;
+    }
 
-/* Forms layout */
-.login-form,
-.signup-form {
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-  padding: 10px 35px;
-}
+    /* Forms layout */
+    .login-form,
+    .signup-form {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        padding: 10px 35px;
+    }
 
-/* Input box */
-.input-box {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
+    /* Input box */
+    .input-box {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
 
-.input-box label {
-  font-size: 15px;
-  color: #333;
-  font-weight: 600;
-}
+    .input-box label {
+        font-size: 15px;
+        color: #333;
+        font-weight: 600;
+    }
 
-.input-box input {
-  padding: 12px 15px;
-  border: 2px solid #ff9f42;
-  border-radius: 12px;
-  font-size: 15px;
-  outline: none;
-  transition: 0.25s ease;
-}
+    .input-box input {
+        padding: 12px 15px;
+        border: 2px solid #ff9f42;
+        border-radius: 12px;
+        font-size: 15px;
+        outline: none;
+        transition: 0.25s ease;
+    }
 
-.input-box input:focus {
-  border-color: #ff7b00;
-  background: #fff5e9;
-}
+    .input-box input:focus {
+        border-color: #ff7b00;
+        background: #fff5e9;
+    }
 
-/* Buttons (Login & Signup) */
-.login-btn,
-.signup-btn {
-  background: #ff7b00;
-  color: white;
-  padding: 12px 0;
-  border: none;
-  border-radius: 12px;
-  font-size: 18px;
-  cursor: pointer;
-  transition: 0.3s;
-  font-weight: 700;
-  margin-top: 10px;
-}
+    /* Buttons (Login & Signup) */
+    .login-btn,
+    .signup-btn {
+        background: #ff7b00;
+        color: white;
+        padding: 12px 0;
+        border: none;
+        border-radius: 12px;
+        font-size: 18px;
+        cursor: pointer;
+        transition: 0.3s;
+        font-weight: 700;
+        margin-top: 10px;
+    }
 
-.login-btn:hover,
-.signup-btn:hover {
-  background: #ff5400;
-}
+    .login-btn:hover,
+    .signup-btn:hover {
+        background: #ff5400;
+    }
 
-/* Switch between login & signup */
-.switch-text {
-  text-align: center;
-  margin-top: 10px;
-  font-size: 14px;
-}
+    /* Switch between login & signup */
+    .switch-text {
+        text-align: center;
+        margin-top: 10px;
+        font-size: 14px;
+    }
 
-.switch-text span {
-  color: #ff7b00;
-  font-weight: 700;
-  cursor: pointer;
-  transition: 0.3s;
-}
+    .switch-text span {
+        color: #ff7b00;
+        font-weight: 700;
+        cursor: pointer;
+        transition: 0.3s;
+    }
 
-.switch-text span:hover {
-  text-decoration: underline;
-}
+    .switch-text span:hover {
+        text-decoration: underline;
+    }
 
-/* Smooth transition when switching */
-.login-form,
-.signup-form,
-.login-title,
-.signup-title {
-  transition: opacity 0.3s ease;
-}
-
+    /* Smooth transition when switching */
+    .login-form,
+    .signup-form,
+    .login-title,
+    .signup-title {
+        transition: opacity 0.3s ease;
+    }
 </style>
 
 <body>
@@ -142,9 +141,9 @@
         <div class="nav-items">
             <a href="#unleash-books-box">Home</a>
             <a href="#browes-by-bk-typ">Categories</a>
-            <a href="">Popular</a>
-            <a href="">About</a>
-            <a href="">Contact us</a>
+            <a href="#popu-col">Popular</a>
+            <a href="#about">About</a>
+            <a href="#footer-cont">Contact us</a>
         </div>
         <div class="nav-buttons">
             <img src="./assets/icons/search.png" id="search-btn" alt="">
@@ -224,66 +223,66 @@
 
 
         </div> -->
-<div class="login-popup">
+        <div class="login-popup">
 
-    <!-- Close Button -->
-    <button onclick="loginPageCut()" id="cut-btn" class="cut-btn">X</button>
+            <!-- Close Button -->
+            <button onclick="loginPageCut()" id="cut-btn" class="cut-btn">X</button>
 
-    <!-- LOGIN SECTION -->
-    <h2 class="login-title">Login</h2>
+            <!-- LOGIN SECTION -->
+            <h2 class="login-title">Login</h2>
 
-    <form class="login-form">
+            <form class="login-form">
 
-        <div class="input-box">
-            <label>Email</label>
-            <input type="email" placeholder="Enter your email">
+                <div class="input-box">
+                    <label>Email</label>
+                    <input type="email" placeholder="Enter your email">
+                </div>
+
+                <div class="input-box">
+                    <label>Password</label>
+                    <input type="password" placeholder="Enter your password">
+                </div>
+
+                <button type="button" class="login-btn">Login</button>
+
+                <p class="switch-text">
+                    Don't have an account?
+                    <span id="show-signup">Sign Up</span>
+                </p>
+
+            </form>
+
+
+            <!-- SIGNUP SECTION -->
+            <h2 class="signup-title" style="display:none;">Sign Up</h2>
+
+            <form class="signup-form" style="display:none;">
+
+                <div class="input-box">
+                    <label>Full Name</label>
+                    <input type="text" placeholder="Enter your full name">
+                </div>
+
+                <div class="input-box">
+                    <label>Email</label>
+                    <input type="email" placeholder="Enter your email">
+                </div>
+
+                <div class="input-box">
+                    <label>Password</label>
+                    <input type="password" placeholder="Create password">
+                </div>
+
+                <button type="button" class="signup-btn">Create Account</button>
+
+                <p class="switch-text">
+                    Already have an account?
+                    <span id="show-login">Login</span>
+                </p>
+
+            </form>
+
         </div>
-
-        <div class="input-box">
-            <label>Password</label>
-            <input type="password" placeholder="Enter your password">
-        </div>
-
-        <button type="button" class="login-btn">Login</button>
-
-        <p class="switch-text">
-            Don't have an account?
-            <span id="show-signup">Sign Up</span>
-        </p>
-
-    </form>
-
-
-    <!-- SIGNUP SECTION -->
-    <h2 class="signup-title" style="display:none;">Sign Up</h2>
-
-    <form class="signup-form" style="display:none;">
-
-        <div class="input-box">
-            <label>Full Name</label>
-            <input type="text" placeholder="Enter your full name">
-        </div>
-
-        <div class="input-box">
-            <label>Email</label>
-            <input type="email" placeholder="Enter your email">
-        </div>
-
-        <div class="input-box">
-            <label>Password</label>
-            <input type="password" placeholder="Create password">
-        </div>
-
-        <button type="button" class="signup-btn">Create Account</button>
-
-        <p class="switch-text">
-            Already have an account?
-            <span id="show-login">Login</span>
-        </p>
-
-    </form>
-
-</div>
 
     </div>
     <div class="body-proxy">
@@ -370,7 +369,7 @@
             <img src="./assets/offer-poster-book-2.png" id="poster-img-2" alt="">
         </div>
 
-        <div class="popular-collection">
+        <div id="popu-col" class="popular-collection">
             <div class="popular-cat-bar">
                 <h1>Popular Collections</h1>
                 <div class="category-box">
@@ -399,15 +398,18 @@
 
         <!--#####============== why choose us ====================#### -->
     </div>
-    <div class="why-choise-text-box">
+    <div id="about" class="why-choise-text-box">
         <div class="choice-topic">
             <h1>Why Choice <br> <span style="color: chocolate;">eDox</span> Bookshop</h1>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, eaque eligendi aliquid quam suscipit
-                repellat. Saepe nam, incidunt consectetur fuga maxime aliquam ad voluptatibus quidem itaque dolorem?
-                Iste quia non eius, cumque exercitationem ab sit, officia repellendus nihil amet dignissimos
-                perspiciatis.
+                At eDox Bookshop, we believe reading should be effortless, inspiring, and accessible to everyone.
+                Our collection is carefully curated to help you learn, grow, and explore new ideas—whether you’re
+                diving into fiction, researching for studies, or discovering powerful stories from around the world.
+                We combine quality, affordability, and a smooth shopping experience, so every reader finds the perfect
+                book
+                without any hassle.
             </p>
+
         </div>
         <div class="expnd-mind-box">
             <div class="degree-img-box">
@@ -430,13 +432,14 @@
 
 
     <div class="meet-our-aouthor">
+
         <h1> Meet out Aouthor </h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Natus architecto dolorem rerum deleniti facere
+        <p>Education is the most powerful weapon which can you use to change the world. Leadership is not about
             <br>
-            necessitatibus dolor fugiat eius sint recusandae.
+            a title or a designation. It's about impact, influence inspiration. Impact involves getting results.
         </p>
         <div class="aouthor-container">
-            <button>left</button>
+            <!-- <button>left</button> -->
             <div class="aouthor-cards-box">
                 <!-- <div class="aouthor-card">
                     <h3>aouthor name</h3>
@@ -445,7 +448,7 @@
                     </div>
                 </div> -->
             </div>
-            <button>right</button>
+            <!-- <button>right</button> -->
         </div>
     </div>
 
@@ -459,14 +462,58 @@
 
     <!-- ###==================== Footer ===========================### -->
 
-    <div class="footer">
+    <div id="footer-cont" class="footer">
         <div class="footer-left-sec">
-            <img src="" alt="">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto voluptate adipisci ad omnis non
-                doloribus, cupiditate ipsum fugit? Nisi omnis laudantium vel neque itaque sint in, cum corrupti hic
-                iste. Consequatur quia earum nesciunt doloremque ipsum sunt adipisci dolores. Quasi.</p>
+            <div class="footer-eb">eB</div>
+            <p>
+                Starting off in an eighteenth century London, this book invites readers to an exciting journey. The
+                lifelong fight of main protagonist's crime solving.
+            </p>
+            <div class="footer-social-box">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-instagram"></a>
+            </div>
         </div>
-        <div class="footer-right-sec"></div>
+        <div class="footer-right-sec">
+            <div class="foot-col-1 foot-col">
+                <p>Delivery</p>
+                <br>
+                <a href="">Cost of delivery</a>
+                <a href="">Payment methods</a>
+                <a href="">Deliery areas</a>
+                <a href="">Delivery Dates</a>
+                <a href="">Complaints & Return</a>
+            </div>
+            <div class="foot-col-2 foot-col">
+                <p>Discovery</p>
+                <br>
+                <a href="">Latest News & Blog</a>
+                <a href="">My Checkout</a>
+                <a href="">return & Exchange</a>
+                <a href="">Shipping & Delivery</a>
+                <a href="">Trak Your order</a>
+            </div>
+            <div class="foot-col-3">
+                <p>Contact Us</p>
+                <br>
+                <div class="call-box foot-cont-box">
+                    <a href="#" class="fa fa-phone foot-cont"></a>
+                    <div class="call-text foot-cont">
+                        <p>Call</p>
+                        <h5>+999 444 0000</h5>
+                    </div>
+                </div>
+                <div class="chat-box foot-cont-box">
+                    <a href="#" class="fa fa-whatsapp"></a>
+                    <div class="chat-text">
+                        <p>Chat</p>
+                        <h5>+999 444 0000</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script type="module" src="./scripts/script.js"></script>

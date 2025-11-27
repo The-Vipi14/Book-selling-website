@@ -1,5 +1,6 @@
 .popular-collection {
   /* background-color: red; */
+  padding-top: 10vh;
   width: 90%;
   margin-left: 5%;
   min-height: 80vh;
@@ -30,7 +31,7 @@
   max-height: 500px;
   max-width: 100%;
   overflow-x: hidden;
-  overflow-y: auto; 
+  overflow-y: auto;
   margin-top: 30px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -53,17 +54,26 @@
   border-radius: 20px;
   transition: 0.5s ease;
 }
-.book-card h3,h4 {
- text-align: center;
+.book-card h3 {
+  text-align: center;
+  font-weight: 500;
+}
+.book-card h4 {
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  color: #7c7c7b;
+}
+.book-card h3,
+h4 {
+  text-align: center;
 }
 .book-card:hover {
- transform: translateY(-10px);
- background-color: #ebe9e8;
-
+  transform: translateY(-10px);
+  background-color: #ebe9e8;
 }
 .book-card:hover {
 }
-.book-img-box{
+.book-img-box {
   height: 60%;
   background-color: red;
   width: 60%;
@@ -110,6 +120,7 @@
 }
 .choice-topic p {
   width: 50%;
+  height: 100%;
   font-size: 1.1rem;
   color: rgb(42, 40, 40);
 }
@@ -174,6 +185,18 @@
   color: rgb(244, 68, 25);
 }
 
+.fade-author-box {
+  position: absolute;
+  background: linear-gradient(
+    90deg,
+    #3d3c3c,
+    transparent 30%,
+    transparent 70%,
+    #dadada
+  );
+  inset: 0;
+  pointer-events: none;
+}
 .meet-our-aouthor {
   height: 90vh;
   width: 100%;
@@ -184,13 +207,22 @@
   gap: 30px;
   padding: 5%;
 }
+.meet-our-aouthor h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+.meet-our-aouthor p {
+  text-align: center;
+  color: #3d3c3c;
+}
 
 .aouthor-container {
   display: flex;
   width: 80%;
   height: 60%;
   margin: auto;
-  justify-content: space-between;
+  justify-content: center;
+  /* justify-content: space-between; */
   align-items: center;
 }
 .aouthor-container button {
@@ -204,6 +236,7 @@
   justify-content: space-between;
   overflow-x: scroll;
   gap: 2%;
+  border-radius: 15px;
 }
 .aouthor-cards-box::-webkit-scrollbar {
   display: none;
@@ -222,11 +255,22 @@
   align-content: flex-end;
   padding: 20px;
 }
+.aouthor-card h2 {
+  color: beige;
+  text-align: center;
+  font-family: "Lucida Handwriting";
+  font-weight: 300;
+  font-size: 1.3rem;
+}
+.aouthor-card p {
+  text-align: center;
+  color: beige;
+}
 
 /* ###  ========================= sales % ================================== ### */
 
 .sale-perc-poster {
-  height: 50%;
+  height: 40%;
   width: 100%;
   background-color: rgba(255, 81, 0, 0.945);
   display: flex;
@@ -244,4 +288,120 @@
   width: 60%;
   font-size: 2.2rem;
   text-align: center;
+}
+
+/* <======================== Footer section ===================================> */
+
+.footer {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black;
+  color: #fff;
+}
+.footer-left-sec {
+  width: 30%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+.footer-left-sec p {
+  color: #cbc3c3;
+  font-size: 1.3rem;
+}
+.footer-eb {
+  height: 50px;
+  width: 50px;
+  background-color: rgb(252, 91, 17);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  border-radius: 5px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.footer-social-box {
+  width: 50%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap:10px;
+}
+.footer-social-box a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 40px;
+  width: 40px;
+  color: rgb(255, 255, 255);
+  transition: 0.5s ease-in-out;
+  border-radius: 50%;
+font-size: 25px;
+  /* hover section */
+  &:hover {
+    background-color: rgb(1, 255, 140);
+    color: rgb(255, 55, 0);
+    transform: translateY(-7px);
+  }
+}
+
+.footer-right-sec {
+  width: 50%;
+  height: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+.foot-col {
+  width: 28%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.foot-col p {
+  font-size: 1.4rem;
+  color: rgb(12, 226, 12);
+  font-weight: 700;
+}
+.foot-col a {
+  font-size: 1rem;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  text-decoration: none;
+  margin-top: 5px;
+}
+
+.foot-col-3{
+  width: 28%;
+  height: 100%;
+   display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.foot-cont-box{
+  height: 50px;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 20px;
+}
+.foot-cont-box a{
+  height: 80%;
+  width: 30%;
+  font-size: 30px;
+  text-decoration: none;
+  display: flex;
+  background-color: #ebe9e8;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  color: green;
 }

@@ -69,69 +69,69 @@ const Books = [
         category: "thriller",
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWrHcohntceSQOdXXsdKebu_AqVf7vT47koA&s"
     },
-    {
-        name: "Gone Girl",
-        author: "Gillian Flynn",
-        price: 340,
-        category: "thriller",
-        image: "./assets/Books/gone-girl.jpg"
-    },
-    {
-        name: "The Girl with the Dragon Tattoo",
-        author: "Stieg Larsson",
-        price: 410,
-        category: "thriller",
-        image: "./assets/Books/dragon-tattoo.jpg"
-    },
-    {
-        name: "Milk and Honey",
-        author: "Rupi Kaur",
-        price: 299,
-        category: "poetry",
-        image: "./assets/Books/milk-and-honey.jpg"
-    },
-    {
-        name: "The Sun and Her Flowers",
-        author: "Rupi Kaur",
-        price: 310,
-        category: "poetry",
-        image: "./assets/Books/sun-and-her-flowers.jpg"
-    },
-    {
-        name: "Leaves of Grass",
-        author: "Walt Whitman",
-        price: 280,
-        category: "poetry",
-        image: "./assets/Books/leaves-of-grass.jpg"
-    },
-    {
-        name: "The Art of War",
-        author: "Sun Tzu",
-        price: 250,
-        category: "history",
-        image: "./assets/Books/art-of-war.jpg"
-    },
-    {
-        name: "To Kill a Mockingbird",
-        author: "Harper Lee",
-        price: 370,
-        category: "fiction",
-        image: "./assets/Books/to-kill-a-mockingbird.jpg"
-    },
-    {
-        name: "The Great Gatsby",
-        author: "F. Scott Fitzgerald",
-        price: 330,
-        category: "fiction",
-        image: "./assets/Books/the-great-gatsby.jpg"
-    },
-    {
-        name: "Educated",
-        author: "Tara Westover",
-        price: 420,
-        category: "non-fiction",
-        image: "./assets/Books/educated.jpg"
-    }
+    // {
+    //     name: "Gone Girl",
+    //     author: "Gillian Flynn",
+    //     price: 340,
+    //     category: "thriller",
+    //     image: "./assets/Books/gone-girl.jpg"
+    // },
+    // {
+    //     name: "The Girl with the Dragon Tattoo",
+    //     author: "Stieg Larsson",
+    //     price: 410,
+    //     category: "thriller",
+    //     image: "./assets/Books/dragon-tattoo.jpg"
+    // },
+    // {
+    //     name: "Milk and Honey",
+    //     author: "Rupi Kaur",
+    //     price: 299,
+    //     category: "poetry",
+    //     image: "./assets/Books/milk-and-honey.jpg"
+    // },
+    // {
+    //     name: "The Sun and Her Flowers",
+    //     author: "Rupi Kaur",
+    //     price: 310,
+    //     category: "poetry",
+    //     image: "./assets/Books/sun-and-her-flowers.jpg"
+    // },
+    // {
+    //     name: "Leaves of Grass",
+    //     author: "Walt Whitman",
+    //     price: 280,
+    //     category: "poetry",
+    //     image: "./assets/Books/leaves-of-grass.jpg"
+    // },
+    // {
+    //     name: "The Art of War",
+    //     author: "Sun Tzu",
+    //     price: 250,
+    //     category: "history",
+    //     image: "./assets/Books/art-of-war.jpg"
+    // },
+    // {
+    //     name: "To Kill a Mockingbird",
+    //     author: "Harper Lee",
+    //     price: 370,
+    //     category: "fiction",
+    //     image: "./assets/Books/to-kill-a-mockingbird.jpg"
+    // },
+    // {
+    //     name: "The Great Gatsby",
+    //     author: "F. Scott Fitzgerald",
+    //     price: 330,
+    //     category: "fiction",
+    //     image: "./assets/Books/the-great-gatsby.jpg"
+    // },
+    // {
+    //     name: "Educated",
+    //     author: "Tara Westover",
+    //     price: 420,
+    //     category: "non-fiction",
+    //     image: "./assets/Books/educated.jpg"
+    // }
 ];
 
 
