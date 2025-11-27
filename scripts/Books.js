@@ -1,5 +1,6 @@
 const Books = [
     {
+        id: 1,
         name: "Atomic Habits",
         author: "James Clear",
         price: 450,
@@ -7,6 +8,7 @@ const Books = [
         image: "https://images-na.ssl-images-amazon.com/images/I/818PnYus11L._AC_UL600_SR600,600_.jpg"
     },
     {
+        id: 2,
         name: "The Alchemist",
         author: "Paulo Coelho",
         price: 299,
@@ -14,6 +16,7 @@ const Books = [
         image: "https://m.media-amazon.com/images/I/617lxveUjYL.jpg"
     },
     {
+        id: 3,
         name: "Ikigai",
         author: "Héctor García, Francesc Miralles",
         price: 320,
@@ -21,6 +24,7 @@ const Books = [
         image: "https://books-room.com/wp-content/uploads/2020/11/ikigai.jpg"
     },
     {
+        id: 4,
         name: "1984",
         author: "George Orwell",
         price: 350,
@@ -28,6 +32,7 @@ const Books = [
         image: "https://www.readerswarehouse.co.za/cdn/shop/files/9789386869388-_1.jpg?v=1752684422"
     },
     {
+        id: 5,
         name: "The Psychology of Money",
         author: "Morgan Housel",
         price: 399,
@@ -35,6 +40,7 @@ const Books = [
         image: "https://m.media-amazon.com/images/I/71Neu6fX16L._UF1000,1000_QL80_.jpg"
     },
     {
+        id: 6,
         name: "Harry Potter and the Sorcerer's Stone",
         author: "J.K. Rowling",
         price: 499,
@@ -42,6 +48,7 @@ const Books = [
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzwlmZeNUI1ld8S2i4PphsEG2AJsPQX4K99g&s"
     },
     {
+        id: 7,
         name: "The Hobbit",
         author: "J.R.R. Tolkien",
         price: 430,
@@ -49,6 +56,7 @@ const Books = [
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMLLqtEofZGAwwvZFHUj-kiHGs-KvaMuzaYQ&s"
     },
     {
+        id: 8,
         name: "Sapiens: A Brief History of Humankind",
         author: "Yuval Noah Harari",
         price: 550,
@@ -56,6 +64,7 @@ const Books = [
         image: "https://rukminim2.flixcart.com/image/480/640/xif0q/regionalbooks/b/e/o/sapience-a-brief-history-of-humankind-original-imagzbc62hfpfhx7.jpeg?q=90"
     },
     {
+        id: 9,
         name: "A Brief History of Time",
         author: "Stephen Hawking",
         price: 420,
@@ -63,12 +72,14 @@ const Books = [
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6MOcocky2kwAbkrt5LD33orn-aVDRpZhiHQ&s"
     },
     {
+        id: 10,
         name: "The Da Vinci Code",
         author: "Dan Brown",
         price: 360,
         category: "thriller",
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWrHcohntceSQOdXXsdKebu_AqVf7vT47koA&s"
     },
+    
     // {
     //     name: "Gone Girl",
     //     author: "Gillian Flynn",

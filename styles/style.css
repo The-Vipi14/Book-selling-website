@@ -136,26 +136,6 @@ nav {
   overflow: hidden;
 }
 
-#login-page {
-  height: 100vh;
-  width: 100%;
-  position: fixed;
-  background-color: rgba(0, 0, 0, 0.421);
-  z-index: 1;
-  display: none;
-  padding: 2%;
-}
-.login-popup {
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  height: 70vmin;
-  width: 40%;
-  background-color: rgb(255, 255, 255);
-  border-radius: 30px;
-}
-
 #unleash-books-box {
   display: flex;
   width: 100%;

@@ -3,24 +3,35 @@
 
 import Books from "./Books.js";
 
-console.log(Books)
-
 const popBooks = document.querySelector('.popular-books-container');
 
 function createBookCards() {
     Books.forEach((book) => {
         const bookCard = document.createElement("div");
         bookCard.classList.add("book-card");
-        bookCard.innerHTML = `<div class="book-img-box"><img src="${book.image}" alt=""></div>
+        bookCard.innerHTML = `
+                    <div class="book-img-box">
+                        <img src="${book.image}" alt="">
+                    </div>
                     <h3>${book.name}</h3>
                     <h4>${book.author}</h4>
-                    <p><span style="text-decoration: line-through; color: red;">$3.36</span><span style="color: green;">$3.36</span></p>
-                    <button >purchase</button>`
+                    <p>
+                        <span>$3.36</span>
+                        <span>$3.36</span>
+                    </p>
+                    <button class="purchase-btn"data-id="${book.id}">
+                             purchase
+                    </button>`
         popBooks.appendChild(bookCard);
     });
-    console.log("first")
-}
-
+    document.querySelectorAll('.purchase-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            const button = e.target.closest('.purchase-btn');
+            const bookID = button.getAttribute('data-id');
+            window.location.href = `productDetails.html?id=${bookID}`;
+        });
+    });
+};
 createBookCards();
 
 

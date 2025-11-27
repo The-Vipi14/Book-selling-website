@@ -1,9 +1,8 @@
 .popular-collection {
-  /* background-color: red; */
   padding-top: 10vh;
   width: 90%;
   margin-left: 5%;
-  min-height: 80vh;
+  height: 120vh;
   margin-top: 20vh;
 }
 .popular-cat-bar {
@@ -28,7 +27,7 @@
   color: rgb(60, 60, 60);
 }
 .popular-books-container {
-  max-height: 500px;
+  max-height: 80vh;
   max-width: 100%;
   overflow-x: hidden;
   overflow-y: auto;
