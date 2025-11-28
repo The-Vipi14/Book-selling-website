@@ -1,4 +1,3 @@
-
 // <============================== Books data and books card creation =================> //
 
 import Books from "./Books.js";
@@ -19,7 +18,7 @@ function createBookCards() {
                         <span>$3.36</span>
                         <span>$3.36</span>
                     </p>
-                    <button class="purchase-btn"data-id="${book.id}">
+                    <button class="purchase-btn" data-id="${book.id}">
                              purchase
                     </button>`
         popBooks.appendChild(bookCard);
@@ -35,9 +34,9 @@ function createBookCards() {
 createBookCards();
 
 
-
 // <============================= Aouthors cards ==============================> //
 import Authors from "./aouthors.js";
+
 console.log(Authors)
 const aouthorCard_Box = document.querySelector('.aouthor-cards-box');
 
