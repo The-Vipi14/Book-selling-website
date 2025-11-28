@@ -1,11 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    .book-card {
+        width: 30%;
+        height: 400px;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        padding: 20px 0;
+        border-radius: 20px;
+        transition: 0.5s ease;
+    }
+
+    .book-card h3 {
+        text-align: center;
+        font-weight: 500;
+    }
+
+    .book-card h4 {
+        text-align: center;
+        font-family: "Courier New", Courier, monospace;
+        color: #7c7c7b;
+    }
+
+    .book-card h3,
+    h4 {
+        text-align: center;
+    }
+
+    .book-card:hover {
+        transform: translateY(-10px);
+        background-color: #ebe9e8;
+    }
+
+    .book-card:hover {}
+
+    .book-img-box {
+        height: 60%;
+        background-color: red;
+        width: 60%;
+    }
+
+    .book-img-box img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: bottom;
+    }
+
+    .book-card button {
+        height: 40px;
+        width: 120px;
+        background-color: transparent;
+        border-radius: 10px;
+        border: 1px solid var(--btn-green-bgColor);
+        color: var(--btn-green-bgColor);
+        font-size: 17px;
+    }
+
+    .book-card button:hover {
+        background-color: var(--btn-green-bgColor);
+        color: rgb(255, 255, 255);
+    }
+</style>
+
 <body>
-    
+    <div id="main-container">
+        <div class="book-card">
+            <img src="" alt="">
+            <h3></h3>
+            <p></p>
+        </div>
+    </div>
+
+
+    <script type="module" src="./scripts/productDetails.js"></script>
+
 </body>
+
 </html>
