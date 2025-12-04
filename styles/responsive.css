@@ -439,9 +439,16 @@
 /* <==================== max width: 480px ===================================> */
 
 @media (max-width: 480px) {
-      .responsive-navbar{
-        display: none;
-      }
+  .logo-box {
+    width: 29%;
+  }
+  .logo-box h1 {
+    font-size: 20px;
+    margin-left: 5px;
+  }
+  .responsive-navbar {
+    display: none;
+  }
   .front-books img {
     width: 94%;
     margin-left: 15px;
