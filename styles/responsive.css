@@ -439,6 +439,9 @@
 /* <==================== max width: 480px ===================================> */
 
 @media (max-width: 480px) {
+      .responsive-navbar{
+        display: none;
+      }
   .front-books img {
     width: 94%;
     margin-left: 15px;
