@@ -13,8 +13,8 @@ if (product) {
              <img src="${product.image}" alt="">
             <h3>${product.name}</h3>
             <p>${product.author}</p>
-            <p>${product.price}</p> `
-}
+            <p>${product.price}</p>`
+} 
 else {
     console.log("product not found")
 }

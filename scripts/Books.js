@@ -5,7 +5,9 @@ const Books = [
         author: "James Clear",
         price: 450,
         category: "non-fiction",
-        image: "https://images-na.ssl-images-amazon.com/images/I/818PnYus11L._AC_UL600_SR600,600_.jpg"
+        image: "https://images-na.ssl-images-amazon.com/images/I/818PnYus11L._AC_UL600_SR600,600_.jpg",
+        description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, commodi, recusandae iste vitae, molestias ex optio ab hic iusto amet odit dolores? Quia voluptatum itaque similique libero nemo id voluptas repudiandae reiciendis omnis ipsum enim ab ea rem expedita commodi recusandae quisquam aliquam aperiam, accusantium praesentium numquam molestiae! Quisquam, aperiam!"
+
     },
     {
         id: 2,
@@ -13,7 +15,8 @@ const Books = [
         author: "Paulo Coelho",
         price: 299,
         category: "fiction",
-        image: "https://m.media-amazon.com/images/I/617lxveUjYL.jpg"
+        image: "https://m.media-amazon.com/images/I/617lxveUjYL.jpg",
+        description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, commodi, recusandae iste vitae, molestias ex optio ab hic iusto amet odit dolores? Quia voluptatum itaque similique libero nemo id voluptas repudiandae reiciendis omnis ipsum enim ab ea rem expedita commodi recusandae quisquam aliquam aperiam, accusantium praesentium numquam molestiae! Quisquam, aperiam!"
     },
     {
         id: 3,
@@ -21,7 +24,8 @@ const Books = [
         author: "Héctor García, Francesc Miralles",
         price: 320,
         category: "non-fiction",
-        image: "https://books-room.com/wp-content/uploads/2020/11/ikigai.jpg"
+        image: "https://books-room.com/wp-content/uploads/2020/11/ikigai.jpg",
+        description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, commodi, recusandae iste vitae, molestias ex optio ab hic iusto amet odit dolores? Quia voluptatum itaque similique libero nemo id voluptas repudiandae reiciendis omnis ipsum enim ab ea rem expedita commodi recusandae quisquam aliquam aperiam, accusantium praesentium numquam molestiae! Quisquam, aperiam!"
     },
     {
         id: 4,
@@ -29,7 +33,8 @@ const Books = [
         author: "George Orwell",
         price: 350,
         category: "fiction",
-        image: "https://www.readerswarehouse.co.za/cdn/shop/files/9789386869388-_1.jpg?v=1752684422"
+        image: "https://www.readerswarehouse.co.za/cdn/shop/files/9789386869388-_1.jpg?v=1752684422",
+        description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, commodi, recusandae iste vitae, molestias ex optio ab hic iusto amet odit dolores? Quia voluptatum itaque similique libero nemo id voluptas repudiandae reiciendis omnis ipsum enim ab ea rem expedita commodi recusandae quisquam aliquam aperiam, accusantium praesentium numquam molestiae! Quisquam, aperiam!"
     },
     {
         id: 5,
@@ -37,7 +42,8 @@ const Books = [
         author: "Morgan Housel",
         price: 399,
         category: "non-fiction",
-        image: "https://m.media-amazon.com/images/I/71Neu6fX16L._UF1000,1000_QL80_.jpg"
+        image: "https://m.media-amazon.com/images/I/71Neu6fX16L._UF1000,1000_QL80_.jpg",
+        description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, commodi, recusandae iste vitae, molestias ex optio ab hic iusto amet odit dolores? Quia voluptatum itaque similique libero nemo id voluptas repudiandae reiciendis omnis ipsum enim ab ea rem expedita commodi recusandae quisquam aliquam aperiam, accusantium praesentium numquam molestiae! Quisquam, aperiam!"
     },
     {
         id: 6,
@@ -45,7 +51,8 @@ const Books = [
         author: "J.K. Rowling",
         price: 499,
         category: "fiction",
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzwlmZeNUI1ld8S2i4PphsEG2AJsPQX4K99g&s"
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzwlmZeNUI1ld8S2i4PphsEG2AJsPQX4K99g&s",
+        description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, commodi, recusandae iste vitae, molestias ex optio ab hic iusto amet odit dolores? Quia voluptatum itaque similique libero nemo id voluptas repudiandae reiciendis omnis ipsum enim ab ea rem expedita commodi recusandae quisquam aliquam aperiam, accusantium praesentium numquam molestiae! Quisquam, aperiam!"
     },
     {
         id: 7,
@@ -53,7 +60,8 @@ const Books = [
         author: "J.R.R. Tolkien",
         price: 430,
         category: "fiction",
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMLLqtEofZGAwwvZFHUj-kiHGs-KvaMuzaYQ&s"
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMLLqtEofZGAwwvZFHUj-kiHGs-KvaMuzaYQ&s",
+        description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, commodi, recusandae iste vitae, molestias ex optio ab hic iusto amet odit dolores? Quia voluptatum itaque similique libero nemo id voluptas repudiandae reiciendis omnis ipsum enim ab ea rem expedita commodi recusandae quisquam aliquam aperiam, accusantium praesentium numquam molestiae! Quisquam, aperiam!"
     },
     {
         id: 8,
@@ -61,7 +69,8 @@ const Books = [
         author: "Yuval Noah Harari",
         price: 550,
         category: "history",
-        image: "https://rukminim2.flixcart.com/image/480/640/xif0q/regionalbooks/b/e/o/sapience-a-brief-history-of-humankind-original-imagzbc62hfpfhx7.jpeg?q=90"
+        image: "https://rukminim2.flixcart.com/image/480/640/xif0q/regionalbooks/b/e/o/sapience-a-brief-history-of-humankind-original-imagzbc62hfpfhx7.jpeg?q=90",
+        description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, commodi, recusandae iste vitae, molestias ex optio ab hic iusto amet odit dolores? Quia voluptatum itaque similique libero nemo id voluptas repudiandae reiciendis omnis ipsum enim ab ea rem expedita commodi recusandae quisquam aliquam aperiam, accusantium praesentium numquam molestiae! Quisquam, aperiam!"
     },
     {
         id: 9,
@@ -69,7 +78,8 @@ const Books = [
         author: "Stephen Hawking",
         price: 420,
         category: "history",
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6MOcocky2kwAbkrt5LD33orn-aVDRpZhiHQ&s"
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6MOcocky2kwAbkrt5LD33orn-aVDRpZhiHQ&s",
+        description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, commodi, recusandae iste vitae, molestias ex optio ab hic iusto amet odit dolores? Quia voluptatum itaque similique libero nemo id voluptas repudiandae reiciendis omnis ipsum enim ab ea rem expedita commodi recusandae quisquam aliquam aperiam, accusantium praesentium numquam molestiae! Quisquam, aperiam!"
     },
     {
         id: 10,
@@ -77,7 +87,8 @@ const Books = [
         author: "Dan Brown",
         price: 360,
         category: "thriller",
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWrHcohntceSQOdXXsdKebu_AqVf7vT47koA&s"
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWrHcohntceSQOdXXsdKebu_AqVf7vT47koA&s",
+        description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, commodi, recusandae iste vitae, molestias ex optio ab hic iusto amet odit dolores? Quia voluptatum itaque similique libero nemo id voluptas repudiandae reiciendis omnis ipsum enim ab ea rem expedita commodi recusandae quisquam aliquam aperiam, accusantium praesentium numquam molestiae! Quisquam, aperiam!"
     },
     
     // {

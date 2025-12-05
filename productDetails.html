@@ -7,77 +7,52 @@
     <title>Document</title>
 </head>
 <style>
-    .book-card {
-        width: 30%;
-        height: 400px;
-        background-color: rgb(255, 255, 255);
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    html,body{
+        height: 100vh;
+        width: 100vw;
+    }
+    #main-container{
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 5px;
-        padding: 20px 0;
-        border-radius: 20px;
-        transition: 0.5s ease;
-    }
-
-    .book-card h3 {
-        text-align: center;
-        font-weight: 500;
-    }
-
-    .book-card h4 {
-        text-align: center;
-        font-family: "Courier New", Courier, monospace;
-        color: #7c7c7b;
-    }
-
-    .book-card h3,
-    h4 {
-        text-align: center;
-    }
-
-    .book-card:hover {
-        transform: translateY(-10px);
-        background-color: #ebe9e8;
-    }
-
-    .book-card:hover {}
-
-    .book-img-box {
-        height: 60%;
-        background-color: red;
-        width: 60%;
-    }
-
-    .book-img-box img {
         height: 100%;
         width: 100%;
-        object-fit: cover;
-        object-position: bottom;
+        background-color: rgba(255, 234, 226, 0.734);
+        align-items: center;
+        justify-content: center;
     }
-
-    .book-card button {
-        height: 40px;
-        width: 120px;
-        background-color: transparent;
-        border-radius: 10px;
-        border: 1px solid var(--btn-green-bgColor);
-        color: var(--btn-green-bgColor);
-        font-size: 17px;
+    .book-card {
+        height: 90%;
+        width: 45%;
+        text-align: center;
     }
-
-    .book-card button:hover {
-        background-color: var(--btn-green-bgColor);
-        color: rgb(255, 255, 255);
+    .book-card img {
+        height: 80%;
+        background-color: red;
+        
+    }
+    .desc-oter-det{
+        width: 65%;
     }
 </style>
 
 <body>
     <div id="main-container">
         <div class="book-card">
-            <img src="" alt="">
+            <!-- <img src="" alt="">
             <h3></h3>
-            <p></p>
+            <p></p> -->
+        </div>
+        <div class="desc-oter-det">
+            <div class="desc-box">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla asperiores inventore quasi suscipit
+                recusandae quod fugiat quidem, nesciunt ad autem, dolorum ducimus placeat? Cumque consequuntur dolor
+                eum, nihil rerum aspernatur obcaecati est assumenda ducimus vel sit rem voluptatum iure quia totam ipsum
+                laborum illum autem, blanditiis nesciunt similique excepturi delectus?
+            </div>
         </div>
     </div>
 
