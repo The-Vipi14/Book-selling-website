@@ -28,13 +28,13 @@
 
 
 
-import Books from './Books.js'; // Adjust path if needed
+import Books from './Books.js';
 
-// Get book ID from URL: productDetails.html?id=5
+
 const urlParams = new URLSearchParams(window.location.search);
 const bookId = Number(urlParams.get('id'));
 
-// Find the book
+
 const book = Books.find(b => b.id === bookId);
 
 const mainContainer = document.getElementById('main-container');
@@ -47,8 +47,9 @@ if (!book) {
             <a href="../index.html" style="color:#FF7A5A; text-decoration:underline;">← Back to Home</a>
         </div>
     `;
-} else {
-    // Fully dynamic rendering
+}
+else {
+
     mainContainer.innerHTML = `
         
         <div class="book-card">
@@ -91,7 +92,7 @@ if (!book) {
         </div>
     `;
 
-    // Add to Cart Functionality
+
     document.getElementById('addToCart').addEventListener('click', () => {
         const qty = parseInt(document.getElementById('qty').value) || 1;
 
@@ -109,7 +110,7 @@ if (!book) {
                 image: book.image,
                 quantity: qty
             });
-        } 
+        }
 
         localStorage.setItem('bookCart', JSON.stringify(cart));
 
@@ -122,11 +123,9 @@ if (!book) {
         }, 1500);
     });
 
-    // Buy Now (Redirect to cart or checkout later)
+
     document.getElementById('buyNow').addEventListener('click', () => {
-        // For now, just add to cart and alert
         document.getElementById('addToCart').click();
         alert('Redirecting to checkout...');
-        // Later: window.location.href = 'checkout.html';
     });
 }
