@@ -109,7 +109,7 @@ if (!book) {
                 image: book.image,
                 quantity: qty
             });
-        }
+        } 
 
         localStorage.setItem('bookCart', JSON.stringify(cart));
 
