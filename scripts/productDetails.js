@@ -11,9 +11,7 @@ console.log(product);
 if (product) {
     document.querySelector(".book-card").innerHTML = `
              <img src="${product.image}" alt="">
-            <h3>${product.name}</h3>
-            <p>${product.author}</p>
-            <p>${product.price}</p>`
+            `
 } 
 else {
     console.log("product not found")

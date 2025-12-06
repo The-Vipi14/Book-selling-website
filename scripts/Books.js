@@ -6,8 +6,13 @@ const Books = [
         price: 450,
         category: "non-fiction",
         image: "https://images-na.ssl-images-amazon.com/images/I/818PnYus11L._AC_UL600_SR600,600_.jpg",
-        description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, commodi, recusandae iste vitae, molestias ex optio ab hic iusto amet odit dolores? Quia voluptatum itaque similique libero nemo id voluptas repudiandae reiciendis omnis ipsum enim ab ea rem expedita commodi recusandae quisquam aliquam aperiam, accusantium praesentium numquam molestiae! Quisquam, aperiam!"
-
+        description: "An actionable guide to building good habits and breaking bad ones. James Clear reveals practical strategies that teach you exactly how to form lasting habits, based on science and real-life examples. Tiny changes, remarkable results.",
+        pages: 320,
+        isbn: "9780735211290",
+        format: "Paperback",
+        language: "English",
+        publisher: "Avery",
+        publishedYear: 2018
     },
     {
         id: 2,
@@ -16,7 +21,13 @@ const Books = [
         price: 299,
         category: "fiction",
         image: "https://m.media-amazon.com/images/I/617lxveUjYL.jpg",
-        description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, commodi, recusandae iste vitae, molestias ex optio ab hic iusto amet odit dolores? Quia voluptatum itaque similique libero nemo id voluptas repudiandae reiciendis omnis ipsum enim ab ea rem expedita commodi recusandae quisquam aliquam aperiam, accusantium praesentium numquam molestiae! Quisquam, aperiam!"
+        description: "A magical story about Santiago, an Andalusian shepherd boy who dreams of finding a treasure in the Egyptian pyramids. On his journey, he learns to listen to his heart and follow his dreams, discovering that the true treasure lies within.",
+        pages: 208,
+        isbn: "9780062315007",
+        format: "Paperback",
+        language: "English",
+        publisher: "HarperOne",
+        publishedYear: 1988
     },
     {
         id: 3,
@@ -25,7 +36,13 @@ const Books = [
         price: 320,
         category: "non-fiction",
         image: "https://books-room.com/wp-content/uploads/2020/11/ikigai.jpg",
-        description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, commodi, recusandae iste vitae, molestias ex optio ab hic iusto amet odit dolores? Quia voluptatum itaque similique libero nemo id voluptas repudiandae reiciendis omnis ipsum enim ab ea rem expedita commodi recusandae quisquam aliquam aperiam, accusantium praesentium numquam molestiae! Quisquam, aperiam!"
+        description: "The Japanese secret to a long and happy life. Exploring the island of Okinawa, the authors uncover the concept of 'ikigai' — your reason for being — and how finding it can bring fulfillment, joy, and longevity.",
+        pages: 208,
+        isbn: "9780143130724",
+        format: "Hardcover",
+        language: "English",
+        publisher: "Penguin Life",
+        publishedYear: 2016
     },
     {
         id: 4,
@@ -34,7 +51,13 @@ const Books = [
         price: 350,
         category: "fiction",
         image: "https://www.readerswarehouse.co.za/cdn/shop/files/9789386869388-_1.jpg?v=1752684422",
-        description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, commodi, recusandae iste vitae, molestias ex optio ab hic iusto amet odit dolores? Quia voluptatum itaque similique libero nemo id voluptas repudiandae reiciendis omnis ipsum enim ab ea rem expedita commodi recusandae quisquam aliquam aperiam, accusantium praesentium numquam molestiae! Quisquam, aperiam!"
+        description: "A chilling dystopian masterpiece about a totalitarian regime that uses surveillance, propaganda, and fear to control every aspect of human life. 'Big Brother is watching you' — a timeless warning about the dangers of unchecked power.",
+        pages: 328,
+        isbn: "9780451524935",
+        format: "Paperback",
+        language: "English",
+        publisher: "Signet Classic",
+        publishedYear: 1949
     },
     {
         id: 5,
@@ -43,7 +66,13 @@ const Books = [
         price: 399,
         category: "non-fiction",
         image: "https://m.media-amazon.com/images/I/71Neu6fX16L._UF1000,1000_QL80_.jpg",
-        description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, commodi, recusandae iste vitae, molestias ex optio ab hic iusto amet odit dolores? Quia voluptatum itaque similique libero nemo id voluptas repudiandae reiciendis omnis ipsum enim ab ea rem expedita commodi recusandae quisquam aliquam aperiam, accusantium praesentium numquam molestiae! Quisquam, aperiam!"
+        description: "Timeless lessons on wealth, greed, and happiness. Through 19 short stories, Morgan Housel explores how people think about money — and why behavior is often more important than intelligence when it comes to financial success.",
+        pages: 256,
+        isbn: "9780857197689",
+        format: "Paperback",
+        language: "English",
+        publisher: "Harriman House",
+        publishedYear: 2020
     },
     {
         id: 6,
@@ -52,7 +81,13 @@ const Books = [
         price: 499,
         category: "fiction",
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzwlmZeNUI1ld8S2i4PphsEG2AJsPQX4K99g&s",
-        description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, commodi, recusandae iste vitae, molestias ex optio ab hic iusto amet odit dolores? Quia voluptatum itaque similique libero nemo id voluptas repudiandae reiciendis omnis ipsum enim ab ea rem expedita commodi recusandae quisquam aliquam aperiam, accusantium praesentium numquam molestiae! Quisquam, aperiam!"
+        description: "The book that started it all. Join Harry as he discovers he’s a wizard on his 11th birthday, enters Hogwarts School of Witchcraft and Wizardry, and uncovers the mystery of the Sorcerer’s Stone in this enchanting tale of friendship, courage, and magic.",
+        pages: 309,
+        isbn: "9780590353427",
+        format: "Paperback",
+        language: "English",
+        publisher: "Scholastic",
+        publishedYear: 1997
     },
     {
         id: 7,
@@ -61,7 +96,13 @@ const Books = [
         price: 430,
         category: "fiction",
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMLLqtEofZGAwwvZFHUj-kiHGs-KvaMuzaYQ&s",
-        description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, commodi, recusandae iste vitae, molestias ex optio ab hic iusto amet odit dolores? Quia voluptatum itaque similique libero nemo id voluptas repudiandae reiciendis omnis ipsum enim ab ea rem expedita commodi recusandae quisquam aliquam aperiam, accusantium praesentium numquam molestiae! Quisquam, aperiam!"
+        description: "Bilbo Baggins, a hobbit who prefers comfort over adventure, is swept into an epic quest to reclaim a treasure guarded by the dragon Smaug. A thrilling prelude to The Lord of the Rings, filled with dwarves, elves, goblins, and one magical ring.",
+        pages: 320,
+        isbn: "9780547928227",
+        format: "Paperback",
+        language: "English",
+        publisher: "William Morrow",
+        publishedYear: 1937
     },
     {
         id: 8,
@@ -70,16 +111,28 @@ const Books = [
         price: 550,
         category: "history",
         image: "https://rukminim2.flixcart.com/image/480/640/xif0q/regionalbooks/b/e/o/sapience-a-brief-history-of-humankind-original-imagzbc62hfpfhx7.jpeg?q=90",
-        description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, commodi, recusandae iste vitae, molestias ex optio ab hic iusto amet odit dolores? Quia voluptatum itaque similique libero nemo id voluptas repudiandae reiciendis omnis ipsum enim ab ea rem expedita commodi recusandae quisquam aliquam aperiam, accusantium praesentium numquam molestiae! Quisquam, aperiam!"
+        description: "From the Cognitive Revolution 70,000 years ago to the present day, Yuval Noah Harari explores how biology and history have defined us and shaped our societies, empires, and future — a bold, thought-provoking journey through human history.",
+        pages: 464,
+        isbn: "9780062316097",
+        format: "Paperback",
+        language: "English",
+        publisher: "Harper Perennial",
+        publishedYear: 2015
     },
     {
         id: 9,
         name: "A Brief History of Time",
         author: "Stephen Hawking",
         price: 420,
-        category: "history",
+        category: "science",
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6MOcocky2kwAbkrt5LD33orn-aVDRpZhiHQ&s",
-        description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, commodi, recusandae iste vitae, molestias ex optio ab hic iusto amet odit dolores? Quia voluptatum itaque similique libero nemo id voluptas repudiandae reiciendis omnis ipsum enim ab ea rem expedita commodi recusandae quisquam aliquam aperiam, accusantium praesentium numquam molestiae! Quisquam, aperiam!"
+        description: "Stephen Hawking’s groundbreaking bestseller explains the universe — from the Big Bang to black holes, from quarks to quantum mechanics — in a way anyone can understand. A mind-expanding classic of modern science.",
+        pages: 240,
+        isbn: "9780553380163",
+        format: "Paperback",
+        language: "English",
+        publisher: "Bantam",
+        publishedYear: 1988
     },
     {
         id: 10,
@@ -88,74 +141,149 @@ const Books = [
         price: 360,
         category: "thriller",
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWrHcohntceSQOdXXsdKebu_AqVf7vT47koA&s",
-        description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, commodi, recusandae iste vitae, molestias ex optio ab hic iusto amet odit dolores? Quia voluptatum itaque similique libero nemo id voluptas repudiandae reiciendis omnis ipsum enim ab ea rem expedita commodi recusandae quisquam aliquam aperiam, accusantium praesentium numquam molestiae! Quisquam, aperiam!"
+        description: "A murder in the Louvre leads symbologist Robert Langdon and cryptologist Sophie Neveu on a breathless chase through Paris and London, unraveling secrets hidden in Da Vinci’s art and challenging centuries-old ideas about Christianity.",
+        pages: 689,
+        isbn: "9780307474278",
+        format: "Paperback",
+        language: "English",
+        publisher: "Anchor Books",
+        publishedYear: 2003
     },
-    
-    // {
-    //     name: "Gone Girl",
-    //     author: "Gillian Flynn",
-    //     price: 340,
-    //     category: "thriller",
-    //     image: "./assets/Books/gone-girl.jpg"
-    // },
-    // {
-    //     name: "The Girl with the Dragon Tattoo",
-    //     author: "Stieg Larsson",
-    //     price: 410,
-    //     category: "thriller",
-    //     image: "./assets/Books/dragon-tattoo.jpg"
-    // },
-    // {
-    //     name: "Milk and Honey",
-    //     author: "Rupi Kaur",
-    //     price: 299,
-    //     category: "poetry",
-    //     image: "./assets/Books/milk-and-honey.jpg"
-    // },
-    // {
-    //     name: "The Sun and Her Flowers",
-    //     author: "Rupi Kaur",
-    //     price: 310,
-    //     category: "poetry",
-    //     image: "./assets/Books/sun-and-her-flowers.jpg"
-    // },
-    // {
-    //     name: "Leaves of Grass",
-    //     author: "Walt Whitman",
-    //     price: 280,
-    //     category: "poetry",
-    //     image: "./assets/Books/leaves-of-grass.jpg"
-    // },
-    // {
-    //     name: "The Art of War",
-    //     author: "Sun Tzu",
-    //     price: 250,
-    //     category: "history",
-    //     image: "./assets/Books/art-of-war.jpg"
-    // },
-    // {
-    //     name: "To Kill a Mockingbird",
-    //     author: "Harper Lee",
-    //     price: 370,
-    //     category: "fiction",
-    //     image: "./assets/Books/to-kill-a-mockingbird.jpg"
-    // },
-    // {
-    //     name: "The Great Gatsby",
-    //     author: "F. Scott Fitzgerald",
-    //     price: 330,
-    //     category: "fiction",
-    //     image: "./assets/Books/the-great-gatsby.jpg"
-    // },
-    // {
-    //     name: "Educated",
-    //     author: "Tara Westover",
-    //     price: 420,
-    //     category: "non-fiction",
-    //     image: "./assets/Books/educated.jpg"
-    // }
+    {
+        id: 11,
+        name: "Gone Girl",
+        author: "Gillian Flynn",
+        price: 340,
+        category: "thriller",
+        image: "./assets/Books/gone-girl.jpg",
+        description: "A twisting psychological thriller about a marriage gone terribly wrong. When Amy Dunne disappears on her fifth wedding anniversary, her husband Nick becomes the prime suspect in this dark, gripping tale of deception and revenge.",
+        pages: 432,
+        isbn: "9780307588371",
+        format: "Paperback",
+        language: "English",
+        publisher: "Broadway Books",
+        publishedYear: 2012
+    },
+    {
+        id: 12,
+        name: "The Girl with the Dragon Tattoo",
+        author: "Stieg Larsson",
+        price: 410,
+        category: "thriller",
+        image: "./assets/Books/dragon-tattoo.jpg",
+        description: "A disgraced journalist and a brilliant hacker with a troubled past team up to solve a 40-year-old disappearance. A dark, intense Scandinavian crime novel that launched the Millennium trilogy.",
+        pages: 672,
+        isbn: "9780307454546",
+        format: "Paperback",
+        language: "English",
+        publisher: "Vintage Crime",
+        publishedYear: 2005
+    },
+    {
+        id: 13,
+        name: "Milk and Honey",
+        author: "Rupi Kaur",
+        price: 299,
+        category: "poetry",
+        image: "./assets/Books/milk-and-honey.jpg",
+        description: "A collection of poetry and prose about survival, love, loss, and femininity. Rupi Kaur's raw and honest words have resonated with millions, making this a modern poetry phenomenon.",
+        pages: 204,
+        isbn: "9781449474256",
+        format: "Paperback",
+        language: "English",
+        publisher: "Andrews McMeel",
+        publishedYear: 2015
+    },
+    {
+        id: 14,
+        name: "The Sun and Her Flowers",
+        author: "Rupi Kaur",
+        price: 310,
+        category: "poetry",
+        image: "./assets/Books/sun-and-her-flowers.jpg",
+        description: "A journey of wilting, falling, rooting, rising, and blooming. Rupi Kaur’s second collection explores love, loss, trauma, healing, and womanhood with beautiful illustrations and heartfelt words.",
+        pages: 256,
+        isbn: "9781449486792",
+        format: "Paperback",
+        language: "English",
+        publisher: "Andrews McMeel",
+        publishedYear: 2017
+    },
+    {
+        id: 15,
+        name: "Leaves of Grass",
+        author: "Walt Whitman",
+        price: 280,
+        category: "poetry",
+        image: "./assets/Books/leaves-of-grass.jpg",
+        description: "Walt Whitman’s groundbreaking celebration of nature, democracy, and the human spirit. A timeless American classic that revolutionized poetry with its free verse and bold embrace of life.",
+        pages: 624,
+        isbn: "9780199539000",
+        format: "Paperback",
+        language: "English",
+        publisher: "Oxford University Press",
+        publishedYear: 1855
+    },
+    {
+        id: 16,
+        name: "The Art of War",
+        author: "Sun Tzu",
+        price: 250,
+        category: "history",
+        image: "./assets/Books/art-of-war.jpg",
+        description: "Ancient Chinese military treatise offering timeless wisdom on strategy, leadership, and conflict. Still studied by business leaders and generals alike for its profound insights into winning without fighting.",
+        pages: 273,
+        isbn: "9781590302255",
+        format: "Paperback",
+        language: "English",
+        publisher: "Shambhala",
+        publishedYear: "5th century BC"
+    },
+    {
+        id: 17,
+        name: "To Kill a Mockingbird",
+        author: "Harper Lee",
+        price: 370,
+        category: "fiction",
+        image: "./assets/Books/to-kill-a-mockingbird.jpg",
+        description: "A powerful story of racial injustice and childhood innocence in the American South. Through Scout Finch’s eyes, we witness courage, compassion, and the fight for what’s right.",
+        pages: 336,
+        isbn: "9780061120087",
+        format: "Paperback",
+        language: "English",
+        publisher: "Harper Perennial",
+        publishedYear: 1960
+    },
+    {
+        id: 18,
+        name: "The Great Gatsby",
+        author: "F. Scott Fitzgerald",
+        price: 330,
+        category: "fiction",
+        image: "./assets/Books/the-great-gatsby.jpg",
+        description: "A dazzling critique of the American Dream. Jay Gatsby’s lavish parties and tragic love for Daisy Buchanan capture the glamour and emptiness of the Jazz Age.",
+        pages: 180,
+        isbn: "9780743273565",
+        format: "Paperback",
+        language: "English",
+        publisher: "Scribner",
+        publishedYear: 1925
+    },
+    {
+        id: 19,
+        name: "Educated",
+        author: "Tara Westover",
+        price: 420,
+        category: "non-fiction",
+        image: "./assets/Books/educated.jpg",
+        description: "A remarkable memoir of a woman who escapes a survivalist family with no formal education to earn a PhD from Cambridge. A testament to the power of learning and self-reinvention.",
+        pages: 352,
+        isbn: "9780399590504",
+        format: "Hardcover",
+        language: "English",
+        publisher: "Random House",
+        publishedYear: 2018
+    }
 ];
-
-
 
 export default Books;
