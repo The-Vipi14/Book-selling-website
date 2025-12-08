@@ -439,9 +439,6 @@
 /* <==================== max width: 480px ===================================> */
 
 @media (max-width: 480px) {
-  *{
-    color: red;
-  }
   #login-page {
     height: 100vh;
     width: 100%;
@@ -457,10 +454,11 @@
     left: 50%;
     transform: translate(-50%, -50%);
     max-height: 70vh;
-    width: 90%;
-    background-color: rgb(255, 255, 255);
+    width: 400px;
+    background-color: rgb(192, 110, 110);
     border-radius: 30px;
     transition: all ease;
+    
   }
   .logo-box {
     width: 29%;
