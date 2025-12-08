@@ -21,7 +21,7 @@
   .login-popup {
     position: absolute;
     top: 45%;
-    left: 50%;
+    left: 5%;
     transform: translate(-50%, -50%);
     max-height: 70vh;
     width: 90%;
@@ -33,7 +33,8 @@
   .responsive-navbar a {
     font-size: 1.2rem;
     text-decoration: none;
-    color: rgb(66, 66, 66);
+    color: rgb(66, 66, 66); 
+
   }
 
   .responsive-navbar {
@@ -471,7 +472,7 @@
   .login-popup {
     position: absolute;
     top: 45%;
-    left: 50%;
+    left: 5%;
     transform: translate(-50%, -50%);
     max-height: 70vh;
     width: 400px;
