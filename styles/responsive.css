@@ -439,6 +439,9 @@
 /* <==================== max width: 480px ===================================> */
 
 @media (max-width: 480px) {
+  *{
+    color: red;
+  }
   #login-page {
     height: 100vh;
     width: 100%;
