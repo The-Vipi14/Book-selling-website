@@ -9,26 +9,6 @@
   .body-proxy {
     padding-bottom: 2vh;
   }
-   #login-page {
-    height: 100vh;
-    width: 100%;
-    position: fixed;
-    background-color: rgba(0, 0, 0, 0.421);
-    z-index: 1;
-    display: none;
-    padding: 2%;
-  }
-  .login-popup {
-    position: absolute;
-    top: 45%;
-    left: 5%;
-    transform: translate(-50%, -50%);
-    max-height: 70vh;
-    width: 90%;
-    background-color: rgb(192, 110, 110);
-    border-radius: 30px;
-    transition: all ease;
-  }
   /* ================== responsive navbar ===========  */
   .responsive-navbar a {
     font-size: 1.2rem;
@@ -461,26 +441,59 @@
 
 @media (max-width: 480px) {
   #login-page {
-    height: 100vh;
-    width: 100%;
-    position: fixed;
-    background-color: rgba(0, 0, 0, 0.421);
-    z-index: 1;
-    display: none;
-    padding: 2%;
-  }
-  .login-popup {
-    position: absolute;
-    top: 45%;
-    left: 5%;
-    transform: translate(-50%, -50%);
-    max-height: 70vh;
-    width: 400px;
-    background-color: rgb(192, 110, 110);
-    border-radius: 30px;
-    transition: all ease;
-    
-  }
+        padding: 5%;
+    }
+
+    .login-popup {
+        width: 95%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-height: 85vh;
+        border-radius: 20px;
+    }
+
+    .login-title,
+    .signup-title {
+        font-size: 22px;
+        margin-top: 25px;
+        margin-bottom: 15px;
+    }
+
+    .login-form,
+    .signup-form {
+        padding: 10px 20px;
+        gap: 12px;
+    }
+
+    .input-box label {
+        font-size: 14px;
+    }
+
+    .input-box input {
+        padding: 10px 10px;
+        font-size: 14px;
+        border-radius: 10px;
+    }
+
+    .login-btn,
+    .signup-btn {
+        padding: 10px 0;
+        font-size: 15px;
+        border-radius: 10px;
+    }
+
+    #cut-btn {
+        height: 32px !important;
+        width: 32px !important;
+        font-size: 15px;
+        top: 12px;
+        right: 12px;
+    }
+
+    .switch-text {
+        font-size: 13px;
+    }
   .logo-box {
     width: 29%;
   }
