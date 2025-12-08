@@ -439,6 +439,15 @@
 /* <==================== max width: 480px ===================================> */
 
 @media (max-width: 480px) {
+  #login-page {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.421);
+    z-index: 1;
+    display: none;
+    padding: 2%;
+  }
   .login-popup {
     position: absolute;
     top: 45%;
@@ -449,7 +458,7 @@
     background-color: rgb(255, 255, 255);
     border-radius: 30px;
     transition: all ease;
-}
+  }
   .logo-box {
     width: 29%;
   }
