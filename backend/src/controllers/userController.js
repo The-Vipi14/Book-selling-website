@@ -5,7 +5,7 @@ import jwt from 'jsonwebtoken'
 export const registerUser = async (req, res) => {
     try {
         const { name, email, password } = req.body;
- 
+
         const userExist = await User.findOne({ email });
 
         if (userExist) return res.status(400).json({ message: "Email already registered." })
@@ -24,12 +24,23 @@ export const registerUser = async (req, res) => {
     }
 }
 
-
 export const loginUser = async (req, res) => {
     try {
         const { email, password } = req.body;
+
+        if (!email || !password) {
+            return res.status(400).json({ message: "Email and password are required" });
+        }
+
         const user = await User.findOne({ email });
+
         if (!user) return res.status(400).json({ message: "user not found" });
+
+        const passIsMatch = await bcrypt.compare(password, user.password);
+
+        if (!passIsMatch) {
+            return res.status(400).json({ message: "invalid creadentials" });
+        }
 
         const token = jwt.sign(
             { id: user._id },
@@ -37,15 +48,16 @@ export const loginUser = async (req, res) => {
             { expiresIn: "7d" }
         );
         res.json({
-            message:"Login successful",
+            message: "Login successful",
             token,
-            user:{
-                id:user._id,
-                name:user.name,
-                email:user.email
+            user: {
+                id: user._id,
+                name: user.name,
+                email: user.email
             }
         })
     } catch (error) {
-        res.status(500).json({error:error.message})
+        res.status(500).json({ error: error.message })
     }
 }
+
