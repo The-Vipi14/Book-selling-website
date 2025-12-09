@@ -33,6 +33,151 @@ button {
   width: 100%;
   padding-bottom: 10vh;
 }
+
+/* <======================= login signup ==========================> */
+/* <======================= login signup ==========================> */
+/* <======================= login signup ==========================> */
+
+ #login-page {
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.421);
+        z-index: 1;
+        display: none;
+        padding: 2%;
+    }
+
+    .login-popup {
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-height: 70vh;
+        width: 40%;
+        background-color: rgb(255, 255, 255);
+        border-radius: 30px;
+        transition: all ease;
+    }
+
+    /* Close button */
+    #cut-btn {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        height: 40px !important;
+        width: 40px !important;
+        border: none;
+        background: #ff7b00;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    #cut-btn:hover {
+        background: #ff5400;
+    }
+
+    /* Titles */
+    .login-title,
+    .signup-title {
+        text-align: center;
+        font-size: 28px;
+        font-weight: 800;
+        color: #ff7b00;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        letter-spacing: 1px;
+    }
+
+    /* Forms layout */
+    .login-form,
+    .signup-form {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        padding: 10px 35px;
+    }
+
+    /* Input box */
+    .input-box {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .input-box label {
+        font-size: 15px;
+        color: #333;
+        font-weight: 600;
+    }
+
+    .input-box input {
+        padding: 12px 15px;
+        border: 2px solid #ff9f42;
+        border-radius: 12px;
+        font-size: 15px;
+        outline: none;
+        transition: 0.25s ease;
+    }
+
+    .input-box input:focus {
+        border-color: #ff7b00;
+        background: #fff5e9;
+    }
+
+    /* Buttons (Login & Signup) */
+    .login-btn,
+    .signup-btn {
+        background: #ff7b00;
+        color: white;
+        padding: 12px 0;
+        border: none;
+        border-radius: 12px;
+        font-size: 18px;
+        cursor: pointer;
+        transition: 0.3s;
+        font-weight: 700;
+        margin-top: 10px;
+    }
+
+    .login-btn:hover,
+    .signup-btn:hover {
+        background: #ff5400;
+    }
+
+    /* Switch between login & signup */
+    .switch-text {
+        text-align: center;
+        margin-top: 10px;
+        font-size: 14px;
+    }
+
+    .switch-text span {
+        color: #ff7b00;
+        font-weight: 700;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .switch-text span:hover {
+        text-decoration: underline;
+    }
+
+    /* Smooth transition when switching */
+    .login-form,
+    .signup-form,
+    .login-title,
+    .signup-title {
+        transition: opacity 0.3s ease;
+    }
+
+
+/* ======================================================================================= */
+/* ======================================================================================= */
 .responsive-navbar{
   display: none;
 }

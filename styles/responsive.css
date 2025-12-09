@@ -9,6 +9,40 @@
   .body-proxy {
     padding-bottom: 2vh;
   }
+  .login-popup {
+        width: 70%;
+        max-height: 75vh;
+        padding: 20px 0;
+        border-radius: 25px;
+    }
+
+    .login-title,
+    .signup-title {
+        font-size: 24px;
+    }
+
+    .login-form,
+    .signup-form {
+        padding: 10px 25px;
+        gap: 15px;
+    }
+
+    .input-box input {
+        padding: 10px 12px;
+        font-size: 14px;
+    }
+
+    .login-btn,
+    .signup-btn {
+        font-size: 16px;
+        padding: 10px 0;
+    }
+
+    #cut-btn {
+        height: 35px !important;
+        width: 35px !important;
+        font-size: 16px;
+    }
   /* ================== responsive navbar ===========  */
   .responsive-navbar a {
     font-size: 1.2rem;
