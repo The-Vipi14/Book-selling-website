@@ -2,6 +2,7 @@ import User from '../models/UserModel.js'
 import bcrypt from 'bcrypt'
 import jwt from 'jsonwebtoken'
 
+
 export const registerUser = async (req, res) => {
     try {
         const { name, email, password } = req.body;
@@ -40,7 +41,6 @@ export const registerUser = async (req, res) => {
             message: "User registered",
             user: safeUser
         });
-
     } catch (error) {
         res.status(500).json({ error: error.message });
     }
