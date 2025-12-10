@@ -14,7 +14,12 @@ dotenv.config();
 const app = express();
 
 // Middlewares
-app.use(cors());
+// app.use(cors({
+//   origin: '*', // or 'http://localhost:5500' etc.
+//   credentials: true
+// }));
+
+app.use(cors())
 app.use(express.json());
 
 // Database connection

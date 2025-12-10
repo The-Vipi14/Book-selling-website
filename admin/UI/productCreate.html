@@ -1,0 +1,166 @@
+<!-- Save as admin-create-product.html -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Add New Book - Admin</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 min-h-screen py-10">
+  <div class="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-lg">
+    <h1 class="text-3xl font-bold text-center mb-8">Add New Book</h1>
+
+    <form id="productForm" enctype="multipart/form-data" class="space-y-6" onsubmit="return false;">
+      <!-- All your inputs (same as before) -->
+      <input type="text" name="title" placeholder="Title" required class="w-full px-4 py-3 border rounded-lg">
+      <input type="text" name="author" placeholder="Author" required class="w-full px-4 py-3 border rounded-lg">
+      <input type="text" name="publisher" placeholder="Publisher" required class="w-full px-4 py-3 border rounded-lg">
+      <input type="number" step="0.01" name="price" placeholder="Price" required
+        class="w-full px-4 py-3 border rounded-lg">
+      <input type="number" step="0.01" name="discountPrice" placeholder="Discount Price (optional)"
+        class="w-full px-4 py-3 border rounded-lg">
+
+      <select name="category" required class="w-full px-4 py-3 border rounded-lg">
+        <option value="">Select Category</option>
+        <option>Fiction</option>
+        <option>Non-Fiction</option>
+        <option>Science</option>
+        <option>Self-Help</option>
+        <option>Biography</option>
+        <option>Romance</option>
+      </select>
+
+      <textarea name="description" placeholder="Description" required rows="4"
+        class="w-full px-4 py-3 border rounded-lg"></textarea>
+
+      <div>
+        <label class="block mb-2 font-medium">Book Cover Image *</label>
+        <input type="file" name="image" accept="image/*" required class="w-full">
+        <img id="preview" class="mt-3 max-w-xs rounded" style="display:none;">
+      </div>
+
+      <button type="submit" id="submitBtn"
+        class="w-full bg-blue-600 text-white py-4 rounded-lg font-bold text-lg hover:bg-blue-700 transition">
+        <span id="btnText">Create Product</span>
+        <span id="loading" class="hidden">Uploading... ⏳</span>
+      </button>
+    </form>
+
+    <div id="message" class="mt-6 text-center text-lg font-medium"></div>
+  </div>
+  <script>
+    // BULLETPROOF DEBUG SCRIPT — NO REFRESH, FULL ERROR VISIBLE
+    document.getElementById('productForm').addEventListener('submit', async function (e) {
+      e.preventDefault();        // This stops refresh 100%
+      e.stopPropagation();       // Extra safety
+
+      alert("Form submitted — JS is working! No refresh! 🎉");
+
+      const formData = new FormData(this);
+
+      try {
+        console.log("Sending to backend...");
+        const response = await fetch('http://localhost:5000/api/create', {
+          method: 'POST',
+          body: formData
+        });
+
+        const data = await response.json();
+        console.log("Response:", response.status, data);
+
+        if (response.ok) {
+          alert("SUCCESS! Product created! Check MongoDB & Cloudinary");
+        } else {
+          alert("Server Error: " + (data.message || response.status));
+        }
+
+      } catch (err) {
+        console.error("FULL ERROR:", err);
+        alert("FAILED TO FETCH:\n" + err.message + "\n\nCheck: Server running? Port 5000 open?");
+      }
+    });
+  </script>
+  <!-- <script>
+// DEBUG VERSION — THIS WILL TELL US IF JS IS WORKING
+const form = document.getElementById('productForm');
+
+form.addEventListener('submit', async (e) => {
+  e.preventDefault();
+
+  // THIS LINE WILL PROVE JS IS RUNNING
+  alert("Form submitted! JS is working!");
+
+  const formData = new FormData(form);
+
+  try {
+    console.log("Sending request...");
+    const res = await fetch('http://localhost:5000/api/create', {
+      method: 'POST',
+      body: formData
+    });
+
+    console.log("Response status:", res.status);
+    const data = await res.json();
+    console.log("Response data:", data);
+
+    alert("Success! Check console (F12)");
+  } catch (err) {
+    console.error("Fetch failed:", err);
+    // alert("Fetch failed: " + err.message);
+  }
+});
+</script> -->
+  <!-- <script>
+    const form = document.getElementById('productForm');
+    const preview = document.getElementById('preview');
+    const message = document.getElementById('message');
+    const btnText = document.getElementById('btnText');
+    const loading = document.getElementById('loading');
+    const submitBtn = document.getElementById('submitBtn');
+
+    document.querySelector('input[name="image"]').addEventListener('change', e => {
+      if (e.target.files[0]) {
+        preview.src = URL.createObjectURL(e.target.files[0]);
+        preview.style.display = 'block';
+      }
+    });
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      message.innerHTML = '';
+      btnText.classList.add('hidden');
+      loading.classList.remove('hidden');
+      submitBtn.disabled = true;
+
+      const formData = new FormData(form);
+
+      try {
+        const res = await fetch('http://localhost:5000/api/create', {
+          method: 'POST',
+          body: formData
+        });
+
+        const data = await res.json();
+
+        if (res.ok) {
+          message.innerHTML = `<p class="text-green-600 bg-green-100 p-4 rounded">✅ ${data.message}</p>`;
+          form.reset();
+          preview.style.display = 'none';
+        } else {
+          message.innerHTML = `<p class="text-red-600 bg-red-100 p-4 rounded">❌ ${data.message}</p>`;
+        }
+      } catch (err) {
+        message.innerHTML = `<p class="text-red-600 bg-red-100 p-4 rounded">Network error!</p>`;
+      } finally {
+        btnText.classList.remove('hidden');
+        loading.classList.add('hidden');
+        submitBtn.disabled = false;
+      }
+    });
+  </script> -->
+</body>
+
+</html>

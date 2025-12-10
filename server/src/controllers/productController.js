@@ -1,54 +1,53 @@
-// import Product from '../models/ProductModel.js'
-
-// export const createProduct = async (req, res) => {
-//   try {
-//     const { title, description, price, discountPrice, category } = req.body;
-
-//     const image = req.file.path; // Cloudinary gives URL here
-
-//     const product = await Product.create({
-//       title,
-//       description,
-//       price,
-//       discountPrice,
-//       category,
-//       image,
-//     });
-
-//     res.status(201).json({
-//       success: true,
-//       message: "Product created successfully",
-//       product
-//     });
-//   } catch (error) {
-//     res.status(500).json({ error: error.message });
-//   }
-// };
-
-
-
+import Product from "../models/ProductModel.js";
 import cloudinary from "../config/cloudinary.js";
 import fs from "fs";
 
 export const createProduct = async (req, res) => {
   try {
-    const file = req.file;
+    if (!req.file) {
+      return res.status(400).json({ success: false, message: "Image is required" });
+    }
 
-    // Upload to Cloudinary
-    const result = await cloudinary.uploader.upload(file.path, {
-      folder: "products"
+    const { title, author, publisher, description, price, discountPrice, category } = req.body;
+
+    const result = await cloudinary.uploader.upload(req.file.path, {
+      folder: "bookstore/products",
+      transformation: [
+        { width: 800, height: 1200, crop: "limit" },
+        { quality: "auto", fetch_format: "auto" }
+      ]
     });
 
-    // Delete local temp file
-    fs.unlinkSync(file.path);
+    fs.unlinkSync(req.file.path); // delete temp file
 
-    res.json({
+    const product = await Product.create({
+      title: title.trim(),
+      author: author.trim(),
+      publisher: publisher.trim(),
+      description: description.trim(),
+      price: parseFloat(price),
+      discountPrice: discountPrice ? parseFloat(discountPrice) : undefined,
+      category,
+      image: result.secure_url,
+      public_id: result.public_id  // optional: for future delete/update
+    });
+    
+    console.log("created");
+
+    return res.status(201).json({
       success: true,
-      imageUrl: result.secure_url
-    });
+      message: "Product created successfully",
+      product
+    }); 
 
   } catch (error) {
-    console.log(error);
-    res.status(500).json({ message: "Upload failed" });
+    if (req.file && fs.existsSync(req.file.path)) {
+      fs.unlinkSync(req.file.path);
+    }
+    console.error("Create Product Error:", error);
+    return res.status(500).json({
+      success: false,
+      message: error.message || "Server error"
+    });
   }
 };
