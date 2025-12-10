@@ -5,6 +5,10 @@ import connectDB from "./src/config/db.js";
 
 import userRouter from "./src/routes/userRoutes.js";
 
+import productRoutes from './src/routes/productRute.js'
+
+
+
 dotenv.config();
 
 const app = express();
@@ -18,6 +22,7 @@ connectDB();
 
 // Routes 
 app.use('/api/user',userRouter);
+app.use('/api',productRoutes);
 
 // Test Route
 app.get("/", (req, res) => {
