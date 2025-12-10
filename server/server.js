@@ -13,12 +13,6 @@ dotenv.config();
 
 const app = express();
 
-// Middlewares
-// app.use(cors({
-//   origin: '*', // or 'http://localhost:5500' etc.
-//   credentials: true
-// }));
-
 app.use(cors())
 app.use(express.json());
 
@@ -27,7 +21,7 @@ connectDB();
 
 // Routes 
 app.use('/api/user',userRouter);
-app.use('/api',productRoutes);
+app.use('/api/product',productRoutes);
 
 // Test Route
 app.get("/", (req, res) => {

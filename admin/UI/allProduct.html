@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin - All Products</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f6f9;
+            margin: 0;
+            padding: 30px;
+            color: #333;
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 28px;
+        }
+
+        .subtitle {
+            color: #7f8c8d;
+            margin-bottom: 30px;
+        }
+
+        table {
+            width: 100%;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            border-collapse: collapse;
+        }
+
+        th {
+            background-color: #3498db;
+            color: #fff;
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        td {
+            padding: 14px;
+            border-bottom: 1px solid #eee;
+        }
+
+        tr:hover {
+            background-color: #f8f9fa;
+        }
+
+        img {
+            width: 60px;
+            height: 85px;
+            object-fit: cover;
+            border-radius: 6px;
+            border: 1px solid #ddd;
+        }
+
+        .price {
+            font-weight: 600;
+            color: #2c3e50;
+        }
+
+        .discount {
+            color: #27ae60;
+            font-weight: 600;
+        }
+
+        .no-discount {
+            color: #95a5a6;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 60px;
+            color: #7f8c8d;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>All Products</h1>
+    <p class="subtitle">Manage and view all books in your store</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Image</th>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Price</th>
+                <th>Discount Price</th>
+                <th>Category</th>
+            </tr>
+        </thead>
+        <tbody id="products-body">
+            <tr>
+                <td colspan="6" class="loading">Loading products...</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        const productsBody = document.getElementById("products-body");
+
+        async function loadProducts() {
+            try {
+                const res = await fetch("http://localhost:5000/api/product/all");
+                const data = await res.json();
+
+                productsBody.innerHTML = ""; // Clear loading
+
+                if (data.success && data.products.length > 0) {
+                    data.products.forEach(product => {
+                        const tr = document.createElement("tr");
+
+                        tr.innerHTML = `
+                            <td><img src="${product.image}" alt="${product.title}" onerror="this.src='https://via.placeholder.com/60x85?text=No+Image'"></td>
+                            <td><strong>${product.title}</strong></td>
+                            <td>${product.author || '-'}</td>
+                            <td class="price">₹${product.price}</td>
+                            <td class="discount">
+                                ${product.discountPrice ? '₹' + product.discountPrice : '<span class="no-discount">-</span>'}
+                            </td>
+                            <td>${product.category || '-'}</td>
+                        `;
+
+                        productsBody.appendChild(tr);
+                    });
+                } else {
+                    productsBody.innerHTML = `<tr><td colspan="6" style="text-align:center; padding:50px; color:#95a5a6;">No products found</td></tr>`;
+                }
+
+            } catch (err) {
+                productsBody.innerHTML = `<tr><td colspan="6" style="text-align:center; padding:50px; color:#e74c3c;">Error loading products</td></tr>`;
+            }
+        }
+
+        loadProducts();
+    </script>
+
+</body>
+</html>
